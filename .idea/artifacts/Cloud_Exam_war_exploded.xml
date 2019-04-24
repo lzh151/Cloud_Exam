@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Cloud_Exam:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Cloud_Exam/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Cloud_Exam" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
