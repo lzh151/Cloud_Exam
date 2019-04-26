@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -46,18 +48,17 @@
         .login_left{
             margin-top: 15px;
             padding: 30px;
-            //border: 1px red solid;
-
+            /*
+            border: 1px red solid;
+            */
         }
         .login_center{
             margin-top: 20px;
             padding: 30px;
-            //border: 1px red solid;
         }
         .login_right{
             margin-top: 25px;
             padding: 30px;
-            //border: 1px red solid;
         }
 
         .td_left{
@@ -90,34 +91,35 @@
         <div class="row">
             <div id="center">
                 <!--排版信息-->
-                <div class="col-lg-3 login_left">
-                    <p id="login_theme">云课堂<span id="register">&nbsp;&nbsp;学生登录</span></p>
+                <div class="col-md-3 login_left">
+                    <p id="login_theme">云课堂<span id="register">&nbsp;&nbsp;教师登录</span></p>
                     <p id="login_theme_e">Cloud Class</p>
                 </div>
                 <!--定义表单 form-->
-                <div class="col-lg-6 login_center">
-                        <form action="/demo" method="post">
-                            <table>
-                                <tr>
-                                    <td class="td_left"><label for="username">用户名:</label></td>
-                                    <td class="td_right"><input type="text" class="form-control" name="username" id="username" placeholder="Username"></td>
-                                </tr>
+                <div class="col-md-6 login_center">
+                    <form action="#" method="post">
+                        <table>
+                            <tr>
+                                <td class="td_left"><label for="username">用户名:</label></td>
+                                <td class="td_right"><input type="text" class="form-control" name="username" id="username" placeholder="Username"></td>
+                            </tr>
 
-                                <tr>
-                                    <td class="td_left"><label for="password">密码:</label></td>
-                                    <td class="td_right"><input type="password" class="form-control" name="password" id="password" placeholder="Password"></td>
-                                </tr>
+                            <tr>
+                                <td class="td_left"><label for="password">密码:</label></td>
+                                <td class="td_right"><input type="password" class="form-control" name="password" id="password" placeholder="Password"></td>
+                            </tr>
 
-                                <tr>
-                                    <td colspan="2" align="center"><button class="btn btn-default" style="margin-top: 30px" type="submit">登录</button>
-                                </tr>
-                            </table>
-                        </form>
+                            <tr>
+                                <td colspan="2" align="center"><button class="btn btn-default" style="margin-top: 30px" type="submit">登录</button>
+                            </tr>
+                        </table>
+                    </form>
+
                 </div>
                 <!--快捷注册-->
-                <div class="col-lg-3 login_right">
-                    <p>未注册？<a href="student_register.jsp">立即注册</a></p>
-                    <p>教师<a href="teacher_login.jsp">登录？</a></p>
+                <div class="col-md-3 login_right">
+                    <p>未注册？<a href="teacher_register.jsp">立即注册</a></p>
+                    <p>学生<a href="student_login.jsp">登录？</a></p>
                 </div>
             </div>
         </div>
@@ -132,7 +134,6 @@
             </div>
         </div>
     </footer>
-
 
 
 </body>

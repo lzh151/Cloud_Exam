@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -96,7 +98,7 @@
                 </div>
                 <!--定义表单 form-->
                 <div class="col-lg-6 login_center">
-                        <form action="/demo" method="post">
+                        <form action="#" method="post">
                             <table>
                                 <tr>
                                     <td class="td_left"><label for="username">用户名:</label></td>
