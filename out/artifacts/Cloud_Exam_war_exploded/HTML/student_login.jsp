@@ -98,23 +98,26 @@
                 </div>
                 <!--定义表单 form-->
                 <div class="col-lg-6 login_center">
-                        <form action="#" method="post">
-                            <table>
-                                <tr>
-                                    <td class="td_left"><label for="username">用户名:</label></td>
-                                    <td class="td_right"><input type="text" class="form-control" name="username" id="username" placeholder="Username"></td>
-                                </tr>
+                    <form action="#" method="post">
+                        <table>
+                            <tr>
+                                <td class="td_left"><label for="username">用户名:</label></td>
+                                <td class="td_right"><input type="text" class="form-control" name="username" id="username" placeholder="Username"></td>
+                            </tr>
 
-                                <tr>
-                                    <td class="td_left"><label for="password">密码:</label></td>
-                                    <td class="td_right"><input type="password" class="form-control" name="password" id="password" placeholder="Password"></td>
-                                </tr>
+                            <tr>
+                                <td class="td_left"><label for="password">密码:</label></td>
+                                <td class="td_right"><input type="password" class="form-control" name="password" id="password" placeholder="Password"></td>
+                            </tr>
 
-                                <tr>
-                                    <td colspan="2" align="center"><button class="btn btn-default" style="margin-top: 30px" type="submit">登录</button>
-                                </tr>
-                            </table>
-                        </form>
+                            <tr>
+                                <td colspan="2" align="center"><button class="btn btn-default" style="margin-top: 30px" type="submit">登录</button>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="alter alert-warning alert-dismissible" role="alert">
+                        <strong>${login_msg}</strong>
+                    </div>
                 </div>
                 <!--快捷注册-->
                 <div class="col-lg-3 login_right">

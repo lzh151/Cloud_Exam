@@ -32,8 +32,8 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public Teacher findTeacherById(String id) {
-        return dao.findById(Integer.parseInt(id));
+    public Teacher findTeacherByName(String name) {
+        return dao.findByName(name);
     }
 
     @Override

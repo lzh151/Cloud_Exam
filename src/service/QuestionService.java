@@ -1,12 +1,10 @@
-package dao;
-
+package service;
 
 import domain.Question;
 
 import java.util.List;
 
-public interface QuestionDao {
-
+public interface QuestionService {
     void AddQuestion(Question question);
 
     List<Question> FindAllQuestionByTeacherId(int id);

@@ -97,7 +97,7 @@
                 </div>
                 <!--定义表单 form-->
                 <div class="col-md-6 login_center">
-                    <form action="#" method="post">
+                    <form action="${pageContext.request.contextPath}/teacherLoginServlet" method="post">
                         <table>
                             <tr>
                                 <td class="td_left"><label for="username">用户名:</label></td>
@@ -114,13 +114,17 @@
                             </tr>
                         </table>
                     </form>
-
+                    <div class="alter alert-warning alert-dismissible" role="alert">
+                        <strong>${login_msg}</strong>
+                    </div>
                 </div>
                 <!--快捷注册-->
                 <div class="col-md-3 login_right">
                     <p>未注册？<a href="teacher_register.jsp">立即注册</a></p>
                     <p>学生<a href="student_login.jsp">登录？</a></p>
                 </div>
+
+
             </div>
         </div>
     </div>

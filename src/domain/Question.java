@@ -2,7 +2,7 @@ package domain;
 
 public class Question {
     private int chapter;
-    private String que_id;
+    private int que_id;
     private String type;
     private String que_describe;
     private String answer_A;
@@ -10,20 +10,14 @@ public class Question {
     private String answer_C;
     private String answer_D;
     private String correct_answer;
+    private int teacher_id;
 
-    @Override
-    public String toString() {
-        return "Question{" +
-                "chapter=" + chapter +
-                ", que_id='" + que_id + '\'' +
-                ", type='" + type + '\'' +
-                ", que_describe='" + que_describe + '\'' +
-                ", answer_A='" + answer_A + '\'' +
-                ", answer_B='" + answer_B + '\'' +
-                ", answer_C='" + answer_C + '\'' +
-                ", answer_D='" + answer_D + '\'' +
-                ", correct_answer='" + correct_answer + '\'' +
-                '}';
+    public int getTeacher_id() {
+        return teacher_id;
+    }
+
+    public void setTeacher_id(int teacher_id) {
+        this.teacher_id = teacher_id;
     }
 
     public int getChapter() {
@@ -34,11 +28,11 @@ public class Question {
         this.chapter = chapter;
     }
 
-    public String getQue_id() {
+    public int getQue_id() {
         return que_id;
     }
 
-    public void setQue_id(String que_id) {
+    public void setQue_id(int que_id) {
         this.que_id = que_id;
     }
 
@@ -96,5 +90,21 @@ public class Question {
 
     public void setCorrect_answer(String correct_answer) {
         this.correct_answer = correct_answer;
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "chapter=" + chapter +
+                ", que_id='" + que_id + '\'' +
+                ", type='" + type + '\'' +
+                ", que_describe='" + que_describe + '\'' +
+                ", answer_A='" + answer_A + '\'' +
+                ", answer_B='" + answer_B + '\'' +
+                ", answer_C='" + answer_C + '\'' +
+                ", answer_D='" + answer_D + '\'' +
+                ", correct_answer='" + correct_answer + '\'' +
+                ", teacher_id=" + teacher_id +
+                '}';
     }
 }

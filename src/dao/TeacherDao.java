@@ -16,7 +16,7 @@ public interface TeacherDao {
 
     void delete(int id);
 
-    Teacher findById(int i);
+    Teacher findByName(String name);
 
     void update(Teacher teacher);
 

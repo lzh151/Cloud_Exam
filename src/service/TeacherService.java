@@ -35,11 +35,11 @@ public interface TeacherService {
     void deleteTeacher(String id);
 
     /**
-     * 根据id查询
-     * @param id
+     * 根据name查询
+     * @param name
      * @return
      */
-    Teacher findTeacherById(String id);
+    Teacher findTeacherByName(String name);
 
     /**
      * 修改用户信息

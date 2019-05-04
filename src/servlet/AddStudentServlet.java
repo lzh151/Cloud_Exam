@@ -1,10 +1,10 @@
 package servlet;
 
 import domain.Student;
+import org.apache.commons.beanutils.BeanUtils;
 import service.StudentService;
 import service.impl.StudentServiceImpl;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +15,7 @@ import java.util.Map;
 
 @WebServlet("/addStudentServlet")
 public class AddStudentServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
 
         Map<String,String[]> map = request.getParameterMap();
@@ -23,7 +23,7 @@ public class AddStudentServlet extends HttpServlet {
         Student student = new Student();
 
         try {
-            org.apache.commons.beanutils.BeanUtils.populate(student,map);
+            BeanUtils.populate(student,map);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -34,7 +34,7 @@ public class AddStudentServlet extends HttpServlet {
         service.addStudent(student);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 }

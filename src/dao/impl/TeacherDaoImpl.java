@@ -2,6 +2,7 @@ package dao.impl;
 
 import dao.TeacherDao;
 import domain.Teacher;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import util.JDBCUtils;
 
@@ -19,7 +20,14 @@ public class TeacherDaoImpl implements TeacherDao {
 
     @Override
     public Teacher findTeacherByUsernameAndPassword(String username, String password) {
-        return null;
+        try {
+            String sql = "select * from teacher where username = ? and password = ?";
+            Teacher teacher = template.queryForObject(sql, new BeanPropertyRowMapper<Teacher>(Teacher.class), username, password);
+            return teacher;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override
@@ -35,8 +43,14 @@ public class TeacherDaoImpl implements TeacherDao {
     }
 
     @Override
-    public Teacher findById(int i) {
-        return null;
+    public Teacher findByName(String name) {try {
+        String sql = "select * from teacher where name = ?";
+        Teacher teacher = template.queryForObject(sql, new BeanPropertyRowMapper<Teacher>(Teacher.class), name);
+        return teacher;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override
