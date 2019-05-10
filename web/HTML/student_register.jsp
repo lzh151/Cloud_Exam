@@ -147,7 +147,6 @@
                                 </tr>
                             </table>
                         </form>
-
                 </div>
                 <!--快捷登录-->
                 <div class="col-md-3 login_right">

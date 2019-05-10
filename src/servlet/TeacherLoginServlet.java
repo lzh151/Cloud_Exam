@@ -1,14 +1,12 @@
 package servlet;
 
+import domain.Answer_sheet;
 import domain.Question;
+import domain.Student;
 import domain.Teacher;
 import org.apache.commons.beanutils.BeanUtils;
-import service.QuestionService;
-import service.StateService;
-import service.TeacherService;
-import service.impl.QuestionServiceImpl;
-import service.impl.StateServiceImpl;
-import service.impl.TeacherServiceImpl;
+import service.*;
+import service.impl.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -46,12 +44,20 @@ public class TeacherLoginServlet extends HttpServlet {
         QuestionService questionService = new QuestionServiceImpl();
         List<Question> questions = questionService.FindAllQuestionByTeacherId(loginTeacher.getId());
 
+        StudentService studentService = new StudentServiceImpl();
+        List<Student> students = studentService.findByTeacherId(loginTeacher.getId());
+
+        Answer_sheetService answer_sheetService = new Answer_sheetServiceImpl();
+        List<Answer_sheet> answer_sheets = answer_sheetService.FindAllByTeaId(loginTeacher.getId());
+
         if(loginTeacher != null){
             StateService service1 = new StateServiceImpl();
             service1.AddTeacherState(loginTeacher);
 
             session.setAttribute("teacher",loginTeacher);
             session.setAttribute("question",questions);
+            session.setAttribute("student",students);
+            session.setAttribute("Schedule",answer_sheets);
             response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
         }
         else{

@@ -29,6 +29,20 @@
                 location.href="${pageContext.request.contextPath}/deleteQuestionServlet?chapter=" + chapter + "&que_id=" + que_id + "&teacher_id=" + teacher_id;
             }
         }
+
+        function deleteStudent(student_id,teacher_id) {
+            if(confirm("确定删除吗?")){
+                location.href="${pageContext.request.contextPath}/deleteTeacherIdServlet?student_id=" + student_id + "&teacher_id=" + teacher_id;
+            }
+        }
+
+        function quitState(teacher_id) {
+            location.href="${pageContext.request.contextPath}/teacherQuitServlet?teacher_id=" + teacher_id;
+        }
+
+        function selectSchedule(exam_name,stu_id,stu_name) {
+            location.href="/teacherSelectScheduleServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&stu_name=" + stu_name;
+        }
     </script>
 
     <link href="../css/form_self.css" rel="stylesheet">
@@ -73,7 +87,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="#">首页</a></li>
+                    <li><a href="../index.html">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
                     <!--下拉列表-->
@@ -101,7 +115,7 @@
                         <a>${teacher.name}老师</a>
                     </li>
                     <li class="dropdown">
-                        <a href="${pageContext.request.contextPath}/teacherQuitServlet">注销</a>
+                        <a href="javascript:quitState(${teacher.id})">注销</a>
                     </li>
                 </ul>
             </div>
@@ -110,9 +124,9 @@
 </div>
 
 <!--添加试题-->
-<div class="container" style="margin-top: 10px">
-    <span style="font-size: 20px;">添加试题</span>
-    <div align="center">
+<div class="container" style="margin-top: 10px" >
+    <div style="font-size: 20px;" id="addTrigger">添加试题</div>
+    <div align="center" id="addQuestion">
         <form action="${pageContext.request.contextPath}/addQuestionServlet" method="post">
             <table>
                 <tr>
@@ -136,6 +150,11 @@
                 <tr>
                     <td class="td_left"><label for="que_describe">问题描述:</label></td>
                     <td class="td_right"><input type="text" class="form-control" name="que_describe" id="que_describe"></td>
+                </tr>
+
+                <tr>
+                    <td class="td_left"><label for="file_path">附件:</label></td>
+                    <td class="td_right"><input type="file" class="form-control" name="file_path" id="file_path"></td>
                 </tr>
 
                 <tr id="form_answer_A">
@@ -210,55 +229,236 @@
 <hr>
 
 <!--查询试题-->
-<div class="container-fluid" style="margin-top: 10px">
-    <span style="font-size: 20px; float: left;">个人提交试题集</span>
-    <!-- 筛选栏 -->
-    <form class="form-inline" style="margin-top: 5px; float: right; margin-right: 60px;">
-        <div class="form-group">
-            <label for="exampleInputName1">单元</label>
-            <input type="text" class="form-control" id="exampleInputName1">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputEmail2">类型</label>
-            <input type="text" class="form-control" id="exampleInputEmail2">
-        </div>
-        <button type="submit" class="btn btn-default">筛选</button>
-    </form>
+<div class="container" style="margin-top: 10px">
+    <div style="font-size: 20px; float: left;" id="searchTrigger">个人提交试题集</div>
+    <div id="searchQuestion">
+        <!-- 筛选栏 -->
+        <form class="form-inline" style="margin-top: 5px; float: right; margin-right: 60px;">
+            <div class="form-group">
+                <label for="exampleInputName1">单元</label>
+                <input type="text" class="form-control" id="exampleInputName1">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">类型</label>
+                <input type="text" class="form-control" id="exampleInputEmail2">
+            </div>
+            <button type="submit" class="btn btn-default">筛选</button>
+        </form>
 
-    <!-- 试题集表格 -->
-    <table class="table table-hover" style="margin-top: 5px; align-content: center">
-        <thead class="font_size" style="align-content: center">
-        <td>单元</td>
-        <td>题号</td>
-        <td>类型</td>
-        <td>问题描述</td>
-        <td>选项A</td>
-        <td>选项B</td>
-        <td>选项C</td>
-        <td>选项D</td>
-        <td>正确答案</td>
-<%--        <td>教师编号</td>--%>
-        <td>操作</td>
-        </thead>
-        <tbody style="align-content: center">
-            <c:forEach items="${question}" var="questions">
-                <tr>
-                    <td>${questions.chapter}</td>
-                    <td>${questions.que_id}</td>
-                    <td>${questions.type}</td>
-                    <td>${questions.que_describe}</td>
-                    <td>${questions.answer_A}</td>
-                    <td>${questions.answer_B}</td>
-                    <td>${questions.answer_C}</td>
-                    <td>${questions.answer_D}</td>
-                    <td>${questions.correct_answer}</td>
-<%--                    <td>${questions.techer_id}</td>--%>
-                    <td><a class="btn btn-default btn-sm" href="#">修改</a> <a class="btn btn-default btn-sm" href="javascript:deleteQuestion(${questions.chapter},${questions.que_id},${questions.teacher_id});">删除</a></td>
-                </tr>
-            </c:forEach>
-        </tbody>
-    </table>
+        <form action="${pageContext.request.contextPath}/addQueToSysServlet" method="post">
+            <!-- 试题集表格 -->
+            <table class="table table-hover" style="margin-top: 5px; align-content: center">
+                <thead class="font_size" style="align-content: center">
+                <td><input type="checkbox" id="questionList"></td>
+                <td>单元</td>
+                <td>题号</td>
+                <td>类型</td>
+                <td>问题描述</td>
+                <td>选项A</td>
+                <td>选项B</td>
+                <td>选项C</td>
+                <td>选项D</td>
+                <td>正确答案</td>
+                <td>操作</td>
+                </thead>
+                <tbody style="align-content: center">
+                    <c:forEach items="${question}" var="questions">
+                        <tr>
+                            <td><input type="checkbox" name="questionId" value="${questions.chapter},${questions.que_id}"></td>
+                            <td>${questions.chapter}</td>
+                            <td>${questions.que_id}</td>
+                            <td>${questions.type}</td>
+                            <td>
+                                <p>${questions.que_describe}</p>
+                                <img src="${questions.file_path}" style="height: 80px" alt="">
+                                <audio src="${questions.file_path}" style="height: 5px" alt=""></audio>
+                                <video src="${questions.file_path}" style="height: 5px" alt=""></video>
+                            </td>
+                            <td>${questions.answer_A}</td>
+                            <td>${questions.answer_B}</td>
+                            <td>${questions.answer_C}</td>
+                            <td>${questions.answer_D}</td>
+                            <td>${questions.correct_answer}</td>
+                            <td><a class="btn btn-default btn-sm" href="#">修改</a> <a class="btn btn-default btn-sm" href="javascript:deleteQuestion(${questions.chapter},${questions.que_id},${questions.teacher_id});">删除</a></td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-default btn-sm">添加被选中试题至组卷系统</button>
+        </form>
+    </div>
 </div>
+<hr>
+
+<script>
+    document.getElementById("questionList").onclick = function(){
+        var cbs = document.getElementsByName("questionId");
+        for (var i = 0; i < cbs.length; i++) {
+            cbs[i].checked = this.checked;
+        }
+    }
+</script>
+
+<%--学生列表--%>
+<div class="container" style="margin-top: 10px">
+    <div style="font-size: 20px; float: left;" id="studentList">学生列表</div>
+    <div id="List">
+        <form action="${pageContext.request.contextPath}/addStuToSysServlet" method="post">
+            <!-- 试题集表格 -->
+            <table class="table table-hover" style="margin-top: 5px; align-content: center">
+                <thead class="font_size" style="align-content: center">
+                <td><input type="checkbox" id="totalStudentList"></td>
+                <td>学号</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>邮箱</td>
+                <td>操作</td>
+                </thead>
+                <tbody style="align-content: center">
+                <c:forEach items="${student}" var="students">
+                    <tr>
+                        <td><input type="checkbox" name="totalStudent" value="${students.id},${students.name}"></td>
+                        <td>${students.id}</td>
+                        <td>${students.name}</td>
+                        <td>${students.gender}</td>
+                        <td>${students.email}</td>
+                        <td><a class="btn btn-default btn-sm" href="javascript:deleteStudent(${students.id},${students.teacher_id});">删除</a></td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+            <button type="submit" class="btn btn-default btn-sm">添加被选中学生至组卷系统</button>
+        </form>
+    </div>
+</div>
+<hr>
+
+<script>
+    document.getElementById("totalStudentList").onclick = function(){
+        var cbs = document.getElementsByName("totalStudent");
+        for (var i = 0; i < cbs.length; i++) {
+            cbs[i].checked = this.checked;
+        }
+    }
+</script>
+
+<%--组卷模块--%>
+<div class="container" style="margin-top: 10px">
+    <div style="font-size: 20px; float: left;" id="organizeExam">组卷系统</div>
+    <form class="form-inline"  id="intelligentProduce" action="${pageContext.request.contextPath}/createExamServlet" method="post">
+        <div class="form-group" style="margin-top: 5px; float: right; margin-right: 60px;">
+            <label for="exampleInput">试卷名称</label>
+            <input type="text" class="form-control" id="exampleInput" name="exam_name">
+            <input type="hidden" name="teacherId" value="${teacher.id}">
+            <input type="submit" class="btn btn-default" value="确认组卷">
+        </div>
+        <div id="ExamList" style="float: left">
+            <table class="table table-hover" style="margin-top: 50px;">
+                <thead class="font_size" style="align-content: center">
+                <td>单元</td>
+                <td>题号</td>
+<%--                <td>操作</td>--%>
+                </thead>
+                <tbody style="align-content: center" id="ExamTable">
+                <tr>
+                    <c:forEach items="${QueTable}" var="QueTables">
+                    <tr>
+                        <input type="hidden" name="que_info" value="${QueTables.chapter},${QueTables.que_id}">
+                        <td>${QueTables.chapter}</td>
+                        <td>${QueTables.que_id}</td>
+<%--                        <td><a class="btn btn-default btn-sm" href="javascript:deleteQueFromSys(${QueTable.chapter},${QueTable.que_id});">删除</a></td>--%>
+                    </tr>
+                    </c:forEach>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="StuList" style="float: right;">
+            <table class="table table-hover" style="margin-top: 50px;">
+                <thead class="font_size" style="align-content: center">
+                <td>学号</td>
+                <td>姓名</td>
+<%--                <td>操作</td>--%>
+                </thead>
+                <tbody style="align-content: center" id="StuTable">
+                <tr>
+                    <c:forEach items="${StuTable}" var="StuTables">
+                    <tr>
+                        <input type="hidden" name="stu_info" value="${StuTables.id},${StuTables.name}">
+                        <td>${StuTables.id}</td>
+                        <td>${StuTables.name}</td>
+<%--                        <td><a class="btn btn-default btn-sm" href="javascript:deleteStuFromSys(${StuTables.id},${StuTables.name});">删除</a></td>--%>
+                    </tr>
+                    </c:forEach>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+<hr>
+
+<%--模块隐藏--%>
+<script>
+    $(document).ready(function(){
+        $("#addTrigger").click(function(){
+            $("#addQuestion").fadeToggle();
+        });
+        $("#searchTrigger").click(function(){
+            $("#searchQuestion").fadeToggle();
+        });
+        $("#studentList").click(function(){
+            $("#List").fadeToggle();
+        });
+        $("#organizeExam").click(function(){
+            $("#intelligentProduce").fadeToggle();
+        });
+    });
+    $("#addQuestion").hide();
+    $("#searchQuestion").hide();
+    $("#List").hide();
+    $("#intelligentProduce").hide();
+</script>
+
+<%--答题进度--%>
+<div class="container" style="margin-top: 10px">
+    <div style="font-size: 20px; float: left;" id="examSchedule">答题进度</div>
+    <form class="form-inline" action="${pageContext.request.contextPath}/teacherSelectScheduleServlet" id="Schedule">
+        <div id="ScheduleList">
+            <table class="table table-hover" style="margin-top: 50px;">
+                <thead class="font_size" style="align-content: center">
+                <td>试卷名称</td>
+                <td>学号</td>
+                <td>姓名</td>
+                <td>操作</td>
+                </thead>
+                <tbody style="align-content: center" id="ScheduleTable">
+                <tr>
+                    <c:forEach items="${Schedule}" var="Schedules">
+                <tr>
+                    <td>${Schedules.exam_name}</td>
+                    <td>${Schedules.stu_id}</td>
+                    <td>${Schedules.stu_name}</td>
+                    <td><a class="btn btn-default btn-sm" href="javascript:selectSchedule(&quot${Schedules.exam_name}&quot,${Schedules.stu_id},&quot ${Schedules.stu_name}&quot);">查看</a></td>
+                </tr>
+                </c:forEach>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+</div>
+<hr>
+
+<%--模块隐藏--%>
+<script>
+    $(document).ready(function(){
+        $("#examSchedule").click(function(){
+            $("#Schedule").fadeToggle();
+        });
+    });
+    $("#Schedule").hide();
+</script>
 
 <!--版权声明-->
 <footer class="container-fluid">

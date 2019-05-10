@@ -23,12 +23,12 @@ public class StateDaoImpl implements StateDao {
     @Override
     public void update(State state) {
         if(state.getType().equals("student")){
-            String sql = "update login_state set state = 0 where type = \"student\" and state = 1";
-            template.update(sql);
+            String sql = "update login_state set state = 0 where type = \"student\" and state = 1 and stu_id = ?";
+            template.update(sql,state.getStu_id());
         }
         else{
-            String sql = "update login_state set state = 0 where type = \"teacher\" and state = 1";
-            template.update(sql);
+            String sql = "update login_state set state = 0 where type = \"teacher\" and state = 1 and teacher_id = ?";
+            template.update(sql,state.getTeacher_id());
         }
 
     }

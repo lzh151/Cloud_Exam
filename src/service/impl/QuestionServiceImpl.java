@@ -25,4 +25,9 @@ public class QuestionServiceImpl implements QuestionService {
         dao.DeleteQuestion(question);
     }
 
+    @Override
+    public Question SearchCorrectAnswer(int chapter, int que_id, int teacher_id) {
+        return dao.SearchCorrectAnswer(chapter,que_id,teacher_id);
+    }
+
 }

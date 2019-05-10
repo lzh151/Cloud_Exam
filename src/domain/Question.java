@@ -4,6 +4,7 @@ public class Question {
     private int chapter;
     private int que_id;
     private String type;
+    private String file_path;
     private String que_describe;
     private String answer_A;
     private String answer_B;
@@ -11,6 +12,14 @@ public class Question {
     private String answer_D;
     private String correct_answer;
     private int teacher_id;
+
+    public String getFile_path() {
+        return file_path;
+    }
+
+    public void setFile_path(String file_path) {
+        this.file_path = file_path;
+    }
 
     public int getTeacher_id() {
         return teacher_id;
@@ -96,8 +105,9 @@ public class Question {
     public String toString() {
         return "Question{" +
                 "chapter=" + chapter +
-                ", que_id='" + que_id + '\'' +
+                ", que_id=" + que_id +
                 ", type='" + type + '\'' +
+                ", file_path='" + file_path + '\'' +
                 ", que_describe='" + que_describe + '\'' +
                 ", answer_A='" + answer_A + '\'' +
                 ", answer_B='" + answer_B + '\'' +

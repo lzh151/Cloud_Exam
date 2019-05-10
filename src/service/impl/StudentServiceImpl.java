@@ -52,4 +52,14 @@ public class StudentServiceImpl implements StudentService {
         }
 
     }
+
+    @Override
+    public List<Student> findByTeacherId(int id) {
+        return dao.findByTeacherId(id);
+    }
+
+    @Override
+    public void deleteTeacherId(int student_id, int teacher_id) {
+        dao.deleteTeacherId(student_id,teacher_id);
+    }
 }

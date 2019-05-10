@@ -18,7 +18,11 @@ public interface StudentDao {
 
     void delete(int id);
 
-    Student findById(int i);
+    Student findById(int id);
+
+    List<Student> findByTeacherId(int id);
+
+    void deleteTeacherId(int student_id,int teacher_id);
 
     void update(Student student);
 

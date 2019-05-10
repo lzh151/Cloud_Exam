@@ -2,6 +2,8 @@ package dao.impl;
 
 import dao.StudentDao;
 import domain.Student;
+import domain.Teacher;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import util.JDBCUtils;
 
@@ -34,8 +36,33 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public Student findById(int i) {
-        return null;
+    public Student findById(int id) {
+        try {
+            String sql = "select * from student where id = ?";
+            Student student = template.queryForObject(sql, new BeanPropertyRowMapper<Student>(Student.class), id);
+            return student;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public List<Student> findByTeacherId(int id) {
+        try {
+            String sql = "select * from student where teacher_id = ?";
+            List<Student> list = template.query(sql, new BeanPropertyRowMapper<Student>(Student.class), id);
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public void deleteTeacherId(int student_id, int teacher_id) {
+        String sql = "update student set teacher_id = null where id = ? and teacher_id = ?";
+        template.update(sql,student_id,teacher_id);
     }
 
     @Override

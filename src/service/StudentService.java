@@ -52,4 +52,16 @@ public interface StudentService {
      * @param ids
      */
     void delSelectedStudent(String[] ids);
+
+    /**
+     * 根据教师id查询
+     * @param id
+     */
+    List<Student> findByTeacherId(int id);
+
+    /**
+     * 根据学生id删除教师id
+     * @param student_id,teacher_id
+     */
+    void deleteTeacherId(int student_id,int teacher_id);
 }

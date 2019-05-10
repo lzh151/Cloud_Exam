@@ -2,22 +2,42 @@ package domain;
 
 public class Answer_sheet {
     private int stu_id;
+    private String stu_name;
     private int sel_chapter;
     private int sel_que_id;
     private String answer;
-    private int correct_number;
-    private int wrong_number;
+    private int teacher_id;
+    private String exam_name;
+    private String answer_correct;
+    private String remark;
 
     @Override
     public String toString() {
         return "Answer_sheet{" +
                 "stu_id=" + stu_id +
+                ", stu_name=" + stu_name +
                 ", sel_chapter=" + sel_chapter +
                 ", sel_que_id=" + sel_que_id +
                 ", answer='" + answer + '\'' +
-                ", correct_number=" + correct_number +
-                ", wrong_number=" + wrong_number +
+                ", teacher_id=" + teacher_id +
+                ", exam_name=" + exam_name +
                 '}';
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public String getAnswer_correct() {
+        return answer_correct;
+    }
+
+    public void setAnswer_correct(String answer_correct) {
+        this.answer_correct = answer_correct;
     }
 
     public int getStu_id() {
@@ -26,6 +46,14 @@ public class Answer_sheet {
 
     public void setStu_id(int stu_id) {
         this.stu_id = stu_id;
+    }
+
+    public void setStu_name(String stu_name) {
+        this.stu_name = stu_name;
+    }
+
+    public String getStu_name() {
+        return stu_name;
     }
 
     public int getSel_chapter() {
@@ -52,19 +80,19 @@ public class Answer_sheet {
         this.answer = answer;
     }
 
-    public int getCorrect_number() {
-        return correct_number;
+    public int getTeacher_id() {
+        return teacher_id;
     }
 
-    public void setCorrect_number(int correct_number) {
-        this.correct_number = correct_number;
+    public void setTeacher_id(int teacher_id) {
+        this.teacher_id = teacher_id;
     }
 
-    public int getWrong_number() {
-        return wrong_number;
+    public String getExam_name() {
+        return exam_name;
     }
 
-    public void setWrong_number(int wrong_number) {
-        this.wrong_number = wrong_number;
+    public void setExam_name(String exam_name) {
+        this.exam_name = exam_name;
     }
 }
