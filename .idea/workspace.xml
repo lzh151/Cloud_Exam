@@ -6,61 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/service/Answer_sheetService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/DeleteQueFromSysServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/DeleteStuFromSysServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/Answer_sheetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/Answer_sheetDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/Answer_sheetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/Answer_sheetDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/QuestionDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/domain/Answer_sheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/domain/Answer_sheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/domain/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/domain/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/Answer_sheetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/Answer_sheetDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/QuestionDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/Answer_sheetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/Answer_sheetDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/QuestionDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/domain/Answer_sheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/domain/Answer_sheet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/domain/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/domain/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/service/impl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/service/impl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/QuestionDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Answer_sheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Answer_sheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1815">
-              <caret line="121" column="54" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
+            <state relative-caret-position="315">
+              <caret line="21" column="93" lean-forward="true" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -591,7 +537,7 @@
       <workItem from="1557015837272" duration="4401000" />
       <workItem from="1557135515084" duration="250000" />
       <workItem from="1557397034694" duration="16362000" />
-      <workItem from="1557454549658" duration="21694000" />
+      <workItem from="1557454549658" duration="21953000" />
     </task>
     <task id="LOCAL-00001" summary="Update attribute and fix such error">
       <created>1556283184115</created>
@@ -614,11 +560,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556963571968</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Complete login and register modules, Add new function in teacher_operation.jsp etc.">
+      <created>1557490813438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557490813438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107341000" />
+    <option name="totallyTimeSpent" value="107600000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -632,17 +585,17 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7068677" visible="true" weight="0.26800978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7062405" visible="true" weight="0.26800978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.29313233" side_tool="true" visible="true" weight="0.26800978" />
+      <window_info id="Web" order="7" sideWeight="0.29375952" side_tool="true" visible="true" weight="0.26800978" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.495116" visible="true" weight="0.39081633" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.495116" weight="0.39081633" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -654,7 +607,7 @@
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.493895" weight="0.32857144" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.498779" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.498779" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -674,7 +627,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update attribute and fix such error" />
     <MESSAGE value="Complete login and register modules, Add new function in teacher_operation.jsp etc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete login and register modules, Add new function in teacher_operation.jsp etc." />
+    <MESSAGE value="Finish teacher all modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish teacher all modules" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/HTML/student_register.html">
@@ -1161,8 +1115,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1815">
-          <caret line="121" column="54" selection-start-line="121" selection-start-column="54" selection-end-line="121" selection-end-column="54" />
+        <state relative-caret-position="315">
+          <caret line="21" column="93" lean-forward="true" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
         </state>
       </provider>
     </entry>
