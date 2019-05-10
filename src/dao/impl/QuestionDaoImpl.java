@@ -45,4 +45,10 @@ public class QuestionDaoImpl implements QuestionDao {
         String sql = "select * from question where chapter = ? and que_id = ? and teacher_id = ?";
         return template.queryForObject(sql,new BeanPropertyRowMapper<Question>(Question.class),chapter,que_id,teacher_id);
     }
+
+    @Override
+    public Question SearchAnswer(int chapter, int que_id, int teacher_id) {
+        String sql = "select * from question where chapter = ? and que_id = ? and teacher_id = ?";
+        return template.queryForObject(sql,new BeanPropertyRowMapper<Question>(Question.class),chapter,que_id,teacher_id);
+    }
 }

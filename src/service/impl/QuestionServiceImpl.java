@@ -30,4 +30,9 @@ public class QuestionServiceImpl implements QuestionService {
         return dao.SearchCorrectAnswer(chapter,que_id,teacher_id);
     }
 
+    @Override
+    public Question SearchAnswer(int chapter, int que_id, int teacher_id) {
+        return dao.SearchAnswer(chapter,que_id,teacher_id);
+    }
+
 }

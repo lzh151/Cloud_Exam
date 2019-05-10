@@ -19,7 +19,7 @@ public class FindAllQuestionByTeacherIdServlet extends HttpServlet {
         List<Question> questions = service.FindAllQuestionByTeacherId(1);
 
         request.setAttribute("questions",questions);
-        request.getRequestDispatcher("/teacher_operation.jap").forward(request,response);
+        request.getRequestDispatcher("/teacher_operation.jsp").forward(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

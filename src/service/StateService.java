@@ -12,4 +12,6 @@ public interface StateService {
 
     void DeleteTeacherState(State state);
 
+    void DeleteStudentState(State state);
+
 }

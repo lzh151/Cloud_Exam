@@ -30,5 +30,20 @@ public class Answer_sheetServiceImpl implements Answer_sheetService {
         answer_sheetDao.AddRemark(answer_sheet);
     }
 
+    @Override
+    public List<Answer_sheet> FindAllByStudentId(int stu_id) {
+        return answer_sheetDao.FindAllByStudentId(stu_id);
+    }
+
+    @Override
+    public List<Answer_sheet> FindAllByStudentIdAndExamName(int stu_id, String exam_name) {
+        return answer_sheetDao.FindAllByStudentIdAndExamName(stu_id,exam_name);
+    }
+
+    @Override
+    public void AddStudentAnswer(Answer_sheet answer_sheet) {
+        answer_sheetDao.AddStudentAnswer(answer_sheet);
+    }
+
 
 }

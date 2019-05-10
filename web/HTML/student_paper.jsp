@@ -28,8 +28,15 @@
             location.href="${pageContext.request.contextPath}/studentQuitServlet?student_id=" + student_id;
         }
 
-        function viewExam(exam_name) {
-            location.href="${pageContext.request.contextPath}/viewExamServlet?exam_name=" + exam_name + "&stu_id=${id}";
+        function addAnswer(exam_name,stu_id,chapter,que_id,index) {
+            var Element = document.getElementsByName("Text")[index - 1];
+            if (Element != null) {
+                var text = Element.value;
+                location.href="${pageContext.request.contextPath}/addStudentAnswerServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&chapter=" + chapter + "&que_id=" + que_id + "&text=" + text + "&stu_name=${name}";
+            }
+            else{
+                confirm("请输入数据!");
+            }
         }
     </script>
 
@@ -114,21 +121,48 @@
 <%--答题进度--%>
 <div class="container" style="margin-top: 10px">
     <div style="font-size: 20px; float: left;" id="examLabel">试卷集</div>
-    <form class="form-inline"  id="examForm">
+    <form class="form-inline"  id="examForm" >
         <div id="examDiv">
             <table class="table table-hover" style="margin-top: 50px;">
                 <thead class="font_size" style="align-content: center">
                 <td>试卷名称</td>
-                <td>操作</td>
+                <td>单元</td>
+                <td>题号</td>
+                <td>类型</td>
+                <td>问题描述</td>
+                <td>选项A</td>
+                <td>选项B</td>
+                <td>选项C</td>
+                <td>选项D</td>
+                <td>批改记录</td>
+                <td>作答答案</td>
+                <td>作答</td>
                 </thead>
                 <tbody style="align-content: center" id="examTable">
                 <tr>
-                    <c:forEach items="${examList}" var="exams">
+<%--                    <c:forEach items="${examAllList}" var="exams" varStatus="status">--%>
+                    <c:forEach items="${questionsList}" var="questions" varStatus="status">
                 <tr>
-                    <td>${exams.exam_name}</td>
-                    <td><a class="btn btn-default" href="javascript:viewExam(&quot ${exams.exam_name}&quot);">查看</a></td>
+                    <td>${questions.exam_name}</td>
+                    <td>${questions.chapter}</td>
+                    <td>${questions.que_id}</td>
+                    <td>${questions.type}</td>
+                    <td>
+                        <p>${questions.que_describe}</p>
+                        <img src="${questions.file_path}" style="height: 80px" alt="">
+                        <audio src="${questions.file_path}" style="height: 5px" alt=""></audio>
+                        <video src="${questions.file_path}" style="height: 5px" alt=""></video>
+                    </td>
+                    <td>${questions.answer_A}</td>
+                    <td>${questions.answer_B}</td>
+                    <td>${questions.answer_C}</td>
+                    <td>${questions.answer_D}</td>
+                    <td>${questions.remark}</td>
+                    <td>${questions.answer}</td>
+                    <td><input type="text" name="Text"><a class="btn btn-default" href="javascript:addAnswer(&quot ${questions.exam_name}&quot,${questions.stu_id},${questions.chapter},${questions.que_id},${status.count});">提交</a></td>
                 </tr>
-                </c:forEach>
+                    </c:forEach>
+<%--                    </c:forEach>--%>
                 </tr>
                 </tbody>
             </table>

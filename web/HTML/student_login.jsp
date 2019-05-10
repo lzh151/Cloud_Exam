@@ -98,7 +98,7 @@
                 </div>
                 <!--定义表单 form-->
                 <div class="col-lg-6 login_center">
-                    <form action="#" method="post">
+                    <form action="${pageContext.request.contextPath}/studentLoginServlet" method="post">
                         <table>
                             <tr>
                                 <td class="td_left"><label for="username">用户名:</label></td>

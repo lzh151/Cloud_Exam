@@ -40,8 +40,8 @@
             location.href="${pageContext.request.contextPath}/teacherQuitServlet?teacher_id=" + teacher_id;
         }
         
-        function judge(exam_name,stu_id,chapter,que_id,teacher_id) {
-            var Element = document.getElementById("judgeText");
+        function judge(exam_name,stu_id,chapter,que_id,teacher_id,index) {
+            var Element = document.getElementsByName("judgeText")[index - 1];
             if (Element != null) {
                 var text = Element.value;
                 location.href="${pageContext.request.contextPath}/addJudgeTextServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&chapter=" + chapter + "&que_id=" + que_id + "&teacher_id=" + teacher_id + "&text=" + text + "&stu_name=${stu_name}";
@@ -150,7 +150,7 @@
                 </thead>
                 <tbody style="align-content: center" id="ScheduleTable">
                 <tr>
-                    <c:forEach items="${ScheduleList}" var="Schedules">
+                    <c:forEach items="${ScheduleList}" var="Schedules" varStatus="status">
                 <tr>
                     <td>${Schedules.exam_name}</td>
                     <td>${Schedules.sel_chapter}</td>
@@ -158,7 +158,7 @@
                     <td>${Schedules.answer}</td>
                     <td>${Schedules.answer_correct}</td>
                     <td>${Schedules.remark}</td>
-                    <td><input type="text" id="judgeText"><a class="btn btn-default" href="javascript:judge(&quot ${Schedules.exam_name}&quot,${Schedules.stu_id},${Schedules.sel_chapter},${Schedules.sel_que_id},${Schedules.teacher_id});">提交</a></td>
+                    <td><input type="text" name="judgeText"><a class="btn btn-default" href="javascript:judge(&quot ${Schedules.exam_name}&quot,${Schedules.stu_id},${Schedules.sel_chapter},${Schedules.sel_que_id},${Schedules.teacher_id},${status.count});">提交</a></td>
                 </tr>
                 </c:forEach>
                 </tr>

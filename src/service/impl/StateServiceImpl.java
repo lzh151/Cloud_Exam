@@ -23,13 +23,18 @@ public class StateServiceImpl implements StateService {
     public void AddStudentState(Student student) {
         State state = new State();
         state.setType("student");
-        state.setTeacher_id(student.getId());
+        state.setStu_id(student.getId());
         state.setState(true);
         dao.add(state,"student");
     }
 
     @Override
     public void DeleteTeacherState(State state) {
+        dao.update(state);
+    }
+
+    @Override
+    public void DeleteStudentState(State state) {
         dao.update(state);
     }
 }

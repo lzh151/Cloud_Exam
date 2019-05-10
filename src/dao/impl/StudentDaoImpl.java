@@ -21,7 +21,14 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public Student findStudentByUsernameAndPassword(String username, String password) {
-        return null;
+        try {
+            String sql = "select * from student where username = ? and password = ?";
+            Student student = template.queryForObject(sql, new BeanPropertyRowMapper<Student>(Student.class), username, password);
+            return student;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override

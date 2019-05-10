@@ -14,4 +14,6 @@ public interface QuestionDao {
     void DeleteQuestion(Question question);
 
     Question SearchCorrectAnswer(int chapter, int que_id, int teacher_id);
+
+    Question SearchAnswer(int chapter,int que_id,int teacher_id);
 }

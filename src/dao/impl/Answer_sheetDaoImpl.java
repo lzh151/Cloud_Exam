@@ -46,4 +46,34 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
         String sql = "update answer_sheet set remark = ? where exam_name = ? and stu_id = ? and sel_chapter = ? and sel_que_id = ? and teacher_id = ?";
         template.update(sql,answer_sheet.getRemark(),answer_sheet.getExam_name(),answer_sheet.getStu_id(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id(),answer_sheet.getTeacher_id());
     }
+
+    @Override
+    public List<Answer_sheet> FindAllByStudentId(int stu_id) {
+        try {
+            String sql = "select * from answer_sheet where stu_id = ? group by exam_name";
+            List<Answer_sheet> list = template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id);
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public List<Answer_sheet> FindAllByStudentIdAndExamName(int stu_id, String exam_name) {
+        try {
+            String sql = "select * from answer_sheet where stu_id = ? and exam_name = ?";
+            List<Answer_sheet> list = template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id, exam_name);
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public void AddStudentAnswer(Answer_sheet answer_sheet) {
+        String sql = "update answer_sheet set answer = ? where exam_name = ? and stu_id = ? and sel_chapter = ? and sel_que_id = ?";
+        template.update(sql,answer_sheet.getAnswer(),answer_sheet.getExam_name(),answer_sheet.getStu_id(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id());
+    }
 }

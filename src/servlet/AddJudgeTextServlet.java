@@ -45,7 +45,6 @@ public class AddJudgeTextServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("ScheduleList",answer_sheets);
         response.sendRedirect(request.getContextPath() + "/HTML/teacher_schedule.jsp");
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
