@@ -1,9 +1,6 @@
 package servlet;
 
-import domain.Answer_sheet;
-import domain.Question;
-import domain.Student;
-import domain.Teacher;
+import domain.*;
 import org.apache.commons.beanutils.BeanUtils;
 import service.*;
 import service.impl.*;
@@ -32,27 +29,30 @@ public class StudentLoginServlet extends HttpServlet {
 
         try {
             BeanUtils.populate(student,map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
 
         StudentService service = new StudentServiceImpl();
         Student loginStudent = service.login(student);
-        System.out.println(loginStudent.getId());
-
-        Answer_sheetService answer_sheetService = new Answer_sheetServiceImpl();
-        List<Answer_sheet> answer_sheets = answer_sheetService.FindAllByStudentId(loginStudent.getId());
 
         if(loginStudent != null){
             StateService stateService = new StateServiceImpl();
-            stateService.AddStudentState(loginStudent);
+            List<State> stateList = stateService.findStateByStudentId(loginStudent.getId());
+            if(stateList != null){
+                stateService.AddStudentState(loginStudent);
 
-            session.setAttribute("name",loginStudent.getName());
-            session.setAttribute("id",loginStudent.getId());
-            session.setAttribute("examList",answer_sheets);
-            response.sendRedirect(request.getContextPath() + "/HTML/student_operation.jsp");
+                Answer_sheetService answer_sheetService = new Answer_sheetServiceImpl();
+                List<Answer_sheet> answer_sheets = answer_sheetService.FindAllByStudentId(loginStudent.getId());
+                session.setAttribute("name",loginStudent.getName());
+                session.setAttribute("id",loginStudent.getId());
+                session.setAttribute("examList",answer_sheets);
+                response.sendRedirect(request.getContextPath() + "/HTML/student_operation.jsp");
+            }
+            else{
+                request.setAttribute("login_msg","请勿重复登录");
+                request.getRequestDispatcher("/HTML/student_login.jsp").forward(request,response);
+            }
         }
         else{
             request.setAttribute("login_msg","用户名密码错误");

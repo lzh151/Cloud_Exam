@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -35,10 +35,6 @@
 
     <link href="../css/form_self.css" rel="stylesheet">
     <style>
-        .picture{
-            height: 250px;
-            border-bottom: 1px solid #cccccc;
-        }
         .menu{
             border-bottom: 1px solid #cccccc;
             padding-left: 35px;
@@ -75,7 +71,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
                     <!--下拉列表-->
@@ -100,7 +96,7 @@
                 <!--登录注册-->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="teacher_operation.jsp">${name}同学</a>
+                        <a href="student_operation.jsp">${name}同学</a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:quitState(${id})">注销</a>
@@ -124,11 +120,9 @@
                 <tbody style="align-content: center" id="examTable">
                 <tr>
                     <c:forEach items="${examList}" var="exams">
-                <tr>
                     <td>${exams.exam_name}</td>
                     <td><a class="btn btn-default" href="javascript:viewExam(&quot ${exams.exam_name}&quot);">查看</a></td>
-                </tr>
-                </c:forEach>
+                    </c:forEach>
                 </tr>
                 </tbody>
             </table>

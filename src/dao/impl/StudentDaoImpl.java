@@ -2,7 +2,6 @@ package dao.impl;
 
 import dao.StudentDao;
 import domain.Student;
-import domain.Teacher;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import util.JDBCUtils;
@@ -23,8 +22,7 @@ public class StudentDaoImpl implements StudentDao {
     public Student findStudentByUsernameAndPassword(String username, String password) {
         try {
             String sql = "select * from student where username = ? and password = ?";
-            Student student = template.queryForObject(sql, new BeanPropertyRowMapper<Student>(Student.class), username, password);
-            return student;
+            return template.queryForObject(sql, new BeanPropertyRowMapper<>(Student.class), username, password);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -46,8 +44,7 @@ public class StudentDaoImpl implements StudentDao {
     public Student findById(int id) {
         try {
             String sql = "select * from student where id = ?";
-            Student student = template.queryForObject(sql, new BeanPropertyRowMapper<Student>(Student.class), id);
-            return student;
+            return template.queryForObject(sql, new BeanPropertyRowMapper<>(Student.class), id);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -58,8 +55,7 @@ public class StudentDaoImpl implements StudentDao {
     public List<Student> findByTeacherId(int id) {
         try {
             String sql = "select * from student where teacher_id = ?";
-            List<Student> list = template.query(sql, new BeanPropertyRowMapper<Student>(Student.class), id);
-            return list;
+            return template.query(sql, new BeanPropertyRowMapper<>(Student.class), id);
         } catch (Exception e) {
             e.printStackTrace();
             return null;

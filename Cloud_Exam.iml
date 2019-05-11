@@ -22,24 +22,24 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/web/WEB-INF/lib" />
+          <root url="file://$MODULE_DIR$/web/WEB-INF/libs" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.ideaLibSources/druid-1.0.9-sources.jar!/" />
         </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/libs" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/web/WEB-INF/lib" />
+          <root url="file://$MODULE_DIR$/web/WEB-INF/libs" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/libs" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
@@ -51,5 +51,13 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery.slim" level="application" />
+    <orderEntry type="library" name="popper" level="application" />
+    <orderEntry type="library" name="jspsmartupload" level="project" />
+    <orderEntry type="library" name="jsmartcom_zh_CN" level="project" />
   </component>
 </module>

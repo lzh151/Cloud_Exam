@@ -4,7 +4,6 @@ import domain.State;
 import service.StateService;
 import service.impl.StateServiceImpl;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,7 +27,7 @@ public class TeacherQuitServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/index.html");
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 }

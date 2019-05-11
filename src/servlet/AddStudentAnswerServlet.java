@@ -8,7 +8,6 @@ import service.QuestionService;
 import service.impl.Answer_sheetServiceImpl;
 import service.impl.QuestionServiceImpl;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -41,8 +40,8 @@ public class AddStudentAnswerServlet extends HttpServlet {
 
         QuestionService questionService = new QuestionServiceImpl();
         List<Question> questions = new ArrayList<>();
-        for (int i = 0; i < answer_sheets.size(); i++) {
-            Question question = questionService.SearchAnswer(answer_sheets.get(i).getSel_chapter(), answer_sheets.get(i).getSel_que_id(), answer_sheets.get(i).getTeacher_id());
+        for (Answer_sheet answerSheet : answer_sheets) {
+            Question question = questionService.SearchAnswer(answerSheet.getSel_chapter(), answerSheet.getSel_que_id(), answerSheet.getTeacher_id());
             questions.add(question);
         }
 

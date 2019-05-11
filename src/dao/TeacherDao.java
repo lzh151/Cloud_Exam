@@ -7,7 +7,6 @@ import java.util.Map;
 
 public interface TeacherDao {
 
-
     List<Teacher> findAll();
 
     Teacher findTeacherByUsernameAndPassword(String username, String password);

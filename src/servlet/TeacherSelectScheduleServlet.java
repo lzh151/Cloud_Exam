@@ -1,13 +1,11 @@
 package servlet;
 
 import domain.Answer_sheet;
-import domain.Question;
 import service.Answer_sheetService;
 import service.QuestionService;
 import service.impl.Answer_sheetServiceImpl;
 import service.impl.QuestionServiceImpl;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,9 +29,9 @@ public class TeacherSelectScheduleServlet extends HttpServlet {
         List<Answer_sheet> answer_sheets = service.FindAllStudentExam(exam_name, stu_id, stu_name);
 
         QuestionService questionService = new QuestionServiceImpl();
-        for (int i = 0; i < answer_sheets.size(); i++) {
-            String correctAnswer = questionService.SearchCorrectAnswer(answer_sheets.get(i).getSel_chapter(), answer_sheets.get(i).getSel_chapter(), answer_sheets.get(i).getTeacher_id()).getCorrect_answer();
-            answer_sheets.get(i).setAnswer_correct(correctAnswer);
+        for (Answer_sheet answer_sheet : answer_sheets) {
+            String correctAnswer = questionService.SearchCorrectAnswer(answer_sheet.getSel_chapter(), answer_sheet.getSel_chapter(), answer_sheet.getTeacher_id()).getCorrect_answer();
+            answer_sheet.setAnswer_correct(correctAnswer);
         }
 
         HttpSession session = request.getSession();

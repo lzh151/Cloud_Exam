@@ -1,7 +1,6 @@
 package servlet;
 
 import domain.Answer_sheet;
-import org.omg.PortableInterceptor.INACTIVE;
 import service.Answer_sheetService;
 import service.QuestionService;
 import service.impl.Answer_sheetServiceImpl;
@@ -18,7 +17,7 @@ import java.util.List;
 
 @WebServlet("/addJudgeTextServlet")
 public class AddJudgeTextServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
 
         Answer_sheet answer_sheet = new Answer_sheet();
@@ -37,9 +36,9 @@ public class AddJudgeTextServlet extends HttpServlet {
         List<Answer_sheet> answer_sheets = service.FindAllStudentExam(exam_name,Integer.parseInt(request.getParameter("stu_id")),request.getParameter("stu_name"));
         QuestionService questionService = new QuestionServiceImpl();
 
-        for (int i = 0; i < answer_sheets.size(); i++) {
-            String correctAnswer = questionService.SearchCorrectAnswer(answer_sheets.get(i).getSel_chapter(), answer_sheets.get(i).getSel_chapter(), answer_sheets.get(i).getTeacher_id()).getCorrect_answer();
-            answer_sheets.get(i).setAnswer_correct(correctAnswer);
+        for (Answer_sheet answerSheet : answer_sheets) {
+            String correctAnswer = questionService.SearchCorrectAnswer(answerSheet.getSel_chapter(), answerSheet.getSel_chapter(), answerSheet.getTeacher_id()).getCorrect_answer();
+            answerSheet.setAnswer_correct(correctAnswer);
         }
 
         HttpSession session = request.getSession();
@@ -47,7 +46,7 @@ public class AddJudgeTextServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/HTML/teacher_schedule.jsp");
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 }

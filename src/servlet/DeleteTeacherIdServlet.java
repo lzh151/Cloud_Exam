@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet("/deleteTeacherIdServlet")
 public class DeleteTeacherIdServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
 
         int student_id = Integer.parseInt(request.getParameter("student_id"));

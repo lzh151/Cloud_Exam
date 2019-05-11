@@ -22,8 +22,7 @@ public class TeacherDaoImpl implements TeacherDao {
     public Teacher findTeacherByUsernameAndPassword(String username, String password) {
         try {
             String sql = "select * from teacher where username = ? and password = ?";
-            Teacher teacher = template.queryForObject(sql, new BeanPropertyRowMapper<Teacher>(Teacher.class), username, password);
-            return teacher;
+            return template.queryForObject(sql, new BeanPropertyRowMapper<>(Teacher.class), username, password);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -34,7 +33,6 @@ public class TeacherDaoImpl implements TeacherDao {
     public void add(Teacher teacher_temp) {
         String sql = "insert into teacher values(?,?,?,?,?,?)";
         template.update(sql,teacher_temp.getId(),teacher_temp.getUsername(),teacher_temp.getPassword(),teacher_temp.getEmail(),teacher_temp.getName(),teacher_temp.getGender());
-
     }
 
     @Override

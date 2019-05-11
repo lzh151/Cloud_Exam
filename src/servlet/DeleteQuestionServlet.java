@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet("/deleteQuestionServlet")
 public class DeleteQuestionServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
 
         HttpSession session = request.getSession();

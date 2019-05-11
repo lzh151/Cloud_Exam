@@ -1,6 +1,5 @@
 package dao;
 
-
 import domain.Question;
 
 import java.util.List;

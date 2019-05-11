@@ -1,7 +1,5 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -41,21 +39,17 @@
         }
 
         function selectSchedule(exam_name,stu_id,stu_name) {
-            location.href="/teacherSelectScheduleServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&stu_name=" + stu_name;
+            location.href="${pageContext.request.contextPath}/teacherSelectScheduleServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&stu_name=" + stu_name;
         }
     </script>
 
     <link href="../css/form_self.css" rel="stylesheet">
     <style>
-        .picture{
-            height: 250px;
-            border-bottom: 1px solid #cccccc;
-        }
         .menu{
             border-bottom: 1px solid #cccccc;
             padding-left: 35px;
             padding-right: 35px;
-            margin-bottom: 0px
+            margin-bottom: 0
         }
         .p_footer{
             background: #f9f9f9;
@@ -87,7 +81,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
                     <!--下拉列表-->
@@ -104,7 +98,9 @@
                 <!--搜索栏-->
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </label>
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
@@ -112,7 +108,7 @@
                 <!--登录注册-->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a>${teacher.name}老师</a>
+                        <a href="#">${teacher.name}老师</a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:quitState(${teacher.id})">注销</a>
@@ -126,8 +122,8 @@
 <!--添加试题-->
 <div class="container" style="margin-top: 10px" >
     <div style="font-size: 20px;" id="addTrigger">添加试题</div>
-    <div align="center" id="addQuestion">
-        <form action="${pageContext.request.contextPath}/addQuestionServlet" method="post">
+    <div id="addQuestion" align="center">
+        <form action="${pageContext.request.contextPath}/addQuestionServlet" method="post" enctype="multipart/form-data">
             <table>
                 <tr>
                     <td class="td_left"><label for="chapter">单元:</label></td>
@@ -142,18 +138,20 @@
                 <tr>
                     <td class="td_left"><label>类型:</label></td>
                     <td class="td_right">
-                        <input type="radio" name="type" value="选择题" checked="checked"> 选择题
-                        <input type="radio" name="type" value="非选题"> 非选题
+                        <label>
+                            <input type="radio" name="type" value="选择题" checked="checked">
+                        </label> 选择题
+                        <label>
+                            <input type="radio" name="type" value="非选题">
+                        </label> 非选题
                     </td>
                 </tr>
 
                 <tr>
                     <td class="td_left"><label for="que_describe">问题描述:</label></td>
                     <td class="td_right"><input type="text" class="form-control" name="que_describe" id="que_describe"></td>
-                </tr>
-
-                <tr>
-                    <td class="td_left"><label for="file_path">附件:</label></td>
+                    <td><input type="checkbox" id="fileCheckBox" hidden="hidden" checked="checked" name="fileCheckBox" value="unchecked"></td>
+                    <td class="td_left"><button class="btn btn-default" type="button" id="fileLabel">添加附件</button></td>
                     <td class="td_right"><input type="file" class="form-control" name="file_path" id="file_path"></td>
                 </tr>
 
@@ -187,8 +185,8 @@
                     <td class="td_right"><input type="text" class="form-control" name="teacher_id" id="teacher_id" value="${teacher.id}" readonly="readonly"></td>
                 </tr>
 
-                <tr>
-                    <td colspan="2" align="center"><button class="btn btn-default" style="margin-top: 30px" type="submit">添加</button>
+                <tr align="center">
+                    <td colspan="2"><button class="btn btn-default" style="margin-top: 30px" type="submit">添加</button>
                 </tr>
             </table>
         </form>
@@ -197,6 +195,22 @@
 
 <!--选择题判断-->
 <script>
+    $(document).ready(function(){
+        $("#fileLabel").click(function(){
+            $("#file_path").fadeToggle();
+        });
+    });
+    $("#file_path").hide();
+
+    document.getElementById("fileLabel").onclick = function () {
+        if (document.getElementById("fileCheckBox").value === "unchecked"){
+            document.getElementById("fileCheckBox").value = "checked";
+        }
+        else {
+            document.getElementById("fileCheckBox").value = "unchecked";
+        }
+    }
+
     var elementsByNameElement = document.getElementsByName("type");
     window.onload = function() {
         if(elementsByNameElement[0].checked === true){
@@ -211,13 +225,13 @@
             document.getElementById("form_answer_C").style.display = "none";
             document.getElementById("form_answer_D").style.display = "none";
         }
-    }
+    };
     elementsByNameElement[0].onclick = function () {
         document.getElementById("form_answer_A").style.display = "";
         document.getElementById("form_answer_B").style.display = "";
         document.getElementById("form_answer_C").style.display = "";
         document.getElementById("form_answer_D").style.display = "";
-    }
+    };
     elementsByNameElement[1].onclick = function () {
         document.getElementById("form_answer_A").style.display = "none";
         document.getElementById("form_answer_B").style.display = "none";
@@ -249,7 +263,7 @@
             <!-- 试题集表格 -->
             <table class="table table-hover" style="margin-top: 5px; align-content: center">
                 <thead class="font_size" style="align-content: center">
-                <td><input type="checkbox" id="questionList"></td>
+                <td><label for="questionList"></label><input type="checkbox" id="questionList"></td>
                 <td>单元</td>
                 <td>题号</td>
                 <td>类型</td>
@@ -264,15 +278,15 @@
                 <tbody style="align-content: center">
                     <c:forEach items="${question}" var="questions">
                         <tr>
-                            <td><input type="checkbox" name="questionId" value="${questions.chapter},${questions.que_id}"></td>
+                            <td><label>
+                                <input type="checkbox" name="questionId" value="${questions.chapter},${questions.que_id}">
+                            </label></td>
                             <td>${questions.chapter}</td>
                             <td>${questions.que_id}</td>
                             <td>${questions.type}</td>
                             <td>
                                 <p>${questions.que_describe}</p>
-                                <img src="${questions.file_path}" style="height: 80px" alt="">
-                                <audio src="${questions.file_path}" style="height: 5px" alt=""></audio>
-                                <video src="${questions.file_path}" style="height: 5px" alt=""></video>
+                                <object data="${questions.file_path}" style="height: 80px" alt=""></object>
                             </td>
                             <td>${questions.answer_A}</td>
                             <td>${questions.answer_B}</td>
@@ -307,7 +321,7 @@
             <!-- 试题集表格 -->
             <table class="table table-hover" style="margin-top: 5px; align-content: center">
                 <thead class="font_size" style="align-content: center">
-                <td><input type="checkbox" id="totalStudentList"></td>
+                <td><label for="totalStudentList"></label><input type="checkbox" id="totalStudentList"></td>
                 <td>学号</td>
                 <td>姓名</td>
                 <td>性别</td>
@@ -315,16 +329,19 @@
                 <td>操作</td>
                 </thead>
                 <tbody style="align-content: center">
-                <c:forEach items="${student}" var="students">
+                    <c:forEach items="${student}" var="students">
                     <tr>
-                        <td><input type="checkbox" name="totalStudent" value="${students.id},${students.name}"></td>
+                        <td><label>
+                            <input type="checkbox" name="totalStudent" value="${students.id},${students.name}">
+                        </label>
+                        </td>
                         <td>${students.id}</td>
                         <td>${students.name}</td>
                         <td>${students.gender}</td>
                         <td>${students.email}</td>
                         <td><a class="btn btn-default btn-sm" href="javascript:deleteStudent(${students.id},${students.teacher_id});">删除</a></td>
                     </tr>
-                </c:forEach>
+                    </c:forEach>
                 </tbody>
             </table>
             <button type="submit" class="btn btn-default btn-sm">添加被选中学生至组卷系统</button>
@@ -357,7 +374,6 @@
                 <thead class="font_size" style="align-content: center">
                 <td>单元</td>
                 <td>题号</td>
-<%--                <td>操作</td>--%>
                 </thead>
                 <tbody style="align-content: center" id="ExamTable">
                 <tr>
@@ -366,10 +382,8 @@
                         <input type="hidden" name="que_info" value="${QueTables.chapter},${QueTables.que_id}">
                         <td>${QueTables.chapter}</td>
                         <td>${QueTables.que_id}</td>
-<%--                        <td><a class="btn btn-default btn-sm" href="javascript:deleteQueFromSys(${QueTable.chapter},${QueTable.que_id});">删除</a></td>--%>
                     </tr>
                     </c:forEach>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -378,7 +392,6 @@
                 <thead class="font_size" style="align-content: center">
                 <td>学号</td>
                 <td>姓名</td>
-<%--                <td>操作</td>--%>
                 </thead>
                 <tbody style="align-content: center" id="StuTable">
                 <tr>
@@ -387,10 +400,8 @@
                         <input type="hidden" name="stu_info" value="${StuTables.id},${StuTables.name}">
                         <td>${StuTables.id}</td>
                         <td>${StuTables.name}</td>
-<%--                        <td><a class="btn btn-default btn-sm" href="javascript:deleteStuFromSys(${StuTables.id},${StuTables.name});">删除</a></td>--%>
                     </tr>
                     </c:forEach>
-                </tr>
                 </tbody>
             </table>
         </div>
@@ -433,16 +444,14 @@
                 <td>操作</td>
                 </thead>
                 <tbody style="align-content: center" id="ScheduleTable">
-                <tr>
                     <c:forEach items="${Schedule}" var="Schedules">
-                <tr>
+                    <tr>
                     <td>${Schedules.exam_name}</td>
                     <td>${Schedules.stu_id}</td>
                     <td>${Schedules.stu_name}</td>
                     <td><a class="btn btn-default btn-sm" href="javascript:selectSchedule(&quot${Schedules.exam_name}&quot,${Schedules.stu_id},&quot ${Schedules.stu_name}&quot);">查看</a></td>
-                </tr>
-                </c:forEach>
-                </tr>
+                    </tr>
+                    </c:forEach>
                 </tbody>
             </table>
         </div>

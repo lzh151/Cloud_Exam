@@ -13,7 +13,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
 
     @Override
     public void AddAnswer(Answer_sheet answer_sheet) {
-        String sql = "insert into answer_sheet values(?,?,?,?,null,?,?)";
+        String sql = "insert into answer_sheet values(?,?,?,?,null,?,?,null)";
         template.update(sql,answer_sheet.getStu_id(),answer_sheet.getStu_name(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id(),answer_sheet.getTeacher_id(),answer_sheet.getExam_name());
     }
 
@@ -21,8 +21,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     public List<Answer_sheet> FindAllByTeaId(int tea_id) {
         try {
             String sql = "select * from answer_sheet where teacher_id = ? group by stu_id,exam_name";
-            List<Answer_sheet> list = template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), tea_id);
-            return list;
+            return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), tea_id);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -33,8 +32,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     public List<Answer_sheet> FindAllStudentExam(String exam_name, int stu_id, String stu_name) {
         try {
             String sql = "select * from answer_sheet where stu_id = ? and stu_name = ? and exam_name = ?";
-            List<Answer_sheet> list = template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id, stu_name, exam_name);
-            return list;
+            return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id, stu_name, exam_name);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -51,8 +49,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     public List<Answer_sheet> FindAllByStudentId(int stu_id) {
         try {
             String sql = "select * from answer_sheet where stu_id = ? group by exam_name";
-            List<Answer_sheet> list = template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id);
-            return list;
+            return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -63,8 +60,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     public List<Answer_sheet> FindAllByStudentIdAndExamName(int stu_id, String exam_name) {
         try {
             String sql = "select * from answer_sheet where stu_id = ? and exam_name = ?";
-            List<Answer_sheet> list = template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id, exam_name);
-            return list;
+            return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id, exam_name);
         } catch (Exception e) {
             e.printStackTrace();
             return null;

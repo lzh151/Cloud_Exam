@@ -20,7 +20,7 @@ import java.util.List;
 
 @WebServlet("/viewExamServlet")
 public class ViewExamServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
         String exam_name = request.getParameter("exam_name");
         String[] split = exam_name.split(" ");
@@ -32,8 +32,8 @@ public class ViewExamServlet extends HttpServlet {
 
         QuestionService questionService = new QuestionServiceImpl();
         List<Question> questions = new ArrayList<>();
-        for (int i = 0; i < answer_sheets.size(); i++) {
-            Question question = questionService.SearchAnswer(answer_sheets.get(i).getSel_chapter(), answer_sheets.get(i).getSel_que_id(), answer_sheets.get(i).getTeacher_id());
+        for (Answer_sheet answer_sheet : answer_sheets) {
+            Question question = questionService.SearchAnswer(answer_sheet.getSel_chapter(), answer_sheet.getSel_que_id(), answer_sheet.getTeacher_id());
             questions.add(question);
         }
 
@@ -65,7 +65,7 @@ public class ViewExamServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/HTML/student_paper.jsp");
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 }

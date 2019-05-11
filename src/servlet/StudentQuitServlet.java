@@ -27,7 +27,7 @@ public class StudentQuitServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/index.html");
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 }

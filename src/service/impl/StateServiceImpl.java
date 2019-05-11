@@ -7,6 +7,8 @@ import domain.Student;
 import domain.Teacher;
 import service.StateService;
 
+import java.util.List;
+
 public class StateServiceImpl implements StateService {
     StateDao dao =  new StateDaoImpl();
 
@@ -36,5 +38,15 @@ public class StateServiceImpl implements StateService {
     @Override
     public void DeleteStudentState(State state) {
         dao.update(state);
+    }
+
+    @Override
+    public List<State> findStateByTeacherId(int teacher_id) {
+        return dao.findStateByTeacherId(teacher_id);
+    }
+
+    @Override
+    public List<State> findStateByStudentId(int student_id) {
+        return dao.findStateByStudentId(student_id);
     }
 }

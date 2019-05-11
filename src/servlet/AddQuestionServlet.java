@@ -2,39 +2,61 @@ package servlet;
 
 import domain.Question;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.tomcat.util.http.fileupload.FileItem;
+import org.apache.tomcat.util.http.fileupload.FileUploadException;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.apache.tomcat.util.http.fileupload.RequestContext;
+import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;
+import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 import service.QuestionService;
 import service.impl.QuestionServiceImpl;
-import sun.tools.jconsole.inspector.Utils;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.io.IOException;
+import javax.servlet.http.*;
+import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import java.util.Map;
 
 @WebServlet("/addQuestionServlet")
+@MultipartConfig
 public class AddQuestionServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+    private String contextPath;
+
+    @Override
+    public void init() {
+        contextPath = getServletContext().getRealPath("/");
+    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.setCharacterEncoding("utf-8");
-
-        Map<String, String[]> map = request.getParameterMap();
-
-        Question question = new Question();
 
         HttpSession session = request.getSession();
 
+        Map<String, String[]> map = request.getParameterMap();
+        Question question = new Question();
+
+        String fileCheckBox = request.getParameter("fileCheckBox");
+
+        if(fileCheckBox.equals("checked")){
+            Part filePart = null;
+            try {
+                filePart = request.getPart("file_path");
+            } catch (ServletException e) {
+                e.printStackTrace();
+            }
+            String fileName = getFileName(filePart);
+            writeTo(fileName,filePart);
+            question.setFile_path("/File/" + fileName);
+        }
         try {
             BeanUtils.populate(question,map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
+
         if(!question.getType().equals("选择题")){
             question.setAnswer_A(null);
             question.setAnswer_B(null);
@@ -46,13 +68,34 @@ public class AddQuestionServlet extends HttpServlet {
         service.AddQuestion(question);
 
         QuestionService questionService = new QuestionServiceImpl();
+
         List<Question> questions = questionService.FindAllQuestionByTeacherId(question.getTeacher_id());
         session.setAttribute("question",questions);
 
         response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         doPost(request,response);
+    }
+
+    private String getFileName(Part part) {
+        String header = part.getHeader("Content-Disposition");
+        String fileName = header.substring(header.indexOf("filename=\"") + 10, header.lastIndexOf("\""));
+        return fileName;
+    }
+
+    private void writeTo(String fileName, Part part) throws IOException {
+        InputStream in = part.getInputStream();
+        //System.out.println(contextPath + "/File/" + fileName);
+        File file = new File(contextPath + "/File/" + fileName);
+        OutputStream out = new FileOutputStream(file);
+        byte[] buffer = new byte[1024];
+        int length = -1;
+        while ((length = in.read(buffer)) != -1) {
+            out.write(buffer, 0, length);
+        }
+        in.close();
+        out.close();
     }
 }

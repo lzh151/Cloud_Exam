@@ -24,9 +24,7 @@ public class AddStudentServlet extends HttpServlet {
 
         try {
             BeanUtils.populate(student,map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
 

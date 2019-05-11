@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -28,13 +27,13 @@
         }
         #login_theme{
             color: #46b8da;
-            font-family: "Heiti SC";
+            font-family: "Heiti SC", serif;
             font-size: 35px;
             border-bottom: #f5e79e solid;
         }
         #login_theme_e{
             color: #eea236;
-            font-family: Cochin;
+            font-family: Cochin, serif;
             font-size: 25px;
         }
         #center{
@@ -42,8 +41,7 @@
             height: 300px;
             border: 5px solid #EEEEEE;
             background-color: white;
-            margin: auto;
-            margin-top: 150px;
+            margin: 150px auto auto;
         }
         .login_left{
             margin-top: 15px;
@@ -71,7 +69,7 @@
         }
         #register{
             color: #adadad;
-            font-family: "Heiti SC";
+            font-family: "Heiti SC", serif;
             font-size: 12px;
         }
         .p_footer{
@@ -83,9 +81,9 @@
 <body>
 
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="/WEB-INF/libs/jquery-3.4.0/dist/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}/WEB-INF/libs/jquery-3.4.0/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="/WEB-INF/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}/WEB-INF/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
     <div class="container-fluid">
         <div class="row">
@@ -109,8 +107,8 @@
                                 <td class="td_right"><input type="password" class="form-control" name="password" id="password" placeholder="Password"></td>
                             </tr>
 
-                            <tr>
-                                <td colspan="2" align="center"><button class="btn btn-default" style="margin-top: 30px" type="submit">登录</button>
+                            <tr align="center">
+                                <td colspan="2"><button class="btn btn-default" style="margin-top: 30px" type="submit">登录</button>
                             </tr>
                         </table>
                     </form>
@@ -120,8 +118,9 @@
                 </div>
                 <!--快捷注册-->
                 <div class="col-md-3 login_right">
-                    <p>未注册？<a href="teacher_register.jsp">立即注册</a></p>
-                    <p>学生<a href="student_login.jsp">登录？</a></p>
+                    <p>未注册？<a href="${pageContext.request.contextPath}/HTML/teacher_register.jsp">立即注册</a></p>
+                    <p>学生<a href="${pageContext.request.contextPath}/HTML/student_login.jsp">登录？</a></p>
+                    <p>返回<a href="${pageContext.request.contextPath}/index.jsp">首页</a></p>
                 </div>
 
 

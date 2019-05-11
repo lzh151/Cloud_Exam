@@ -1,5 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -54,15 +53,11 @@
 
     <link href="../css/form_self.css" rel="stylesheet">
     <style>
-        .picture{
-            height: 250px;
-            border-bottom: 1px solid #cccccc;
-        }
         .menu{
             border-bottom: 1px solid #cccccc;
             padding-left: 35px;
             padding-right: 35px;
-            margin-bottom: 0px
+            margin-bottom: 0
         }
         .p_footer{
             background: #f9f9f9;
@@ -94,7 +89,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
                     <!--下拉列表-->
@@ -111,7 +106,9 @@
                 <!--搜索栏-->
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </label>
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
@@ -149,19 +146,19 @@
                 <td>批改</td>
                 </thead>
                 <tbody style="align-content: center" id="ScheduleTable">
-                <tr>
                     <c:forEach items="${ScheduleList}" var="Schedules" varStatus="status">
-                <tr>
+                    <tr>
                     <td>${Schedules.exam_name}</td>
                     <td>${Schedules.sel_chapter}</td>
                     <td>${Schedules.sel_que_id}</td>
                     <td>${Schedules.answer}</td>
                     <td>${Schedules.answer_correct}</td>
                     <td>${Schedules.remark}</td>
-                    <td><input type="text" name="judgeText"><a class="btn btn-default" href="javascript:judge(&quot ${Schedules.exam_name}&quot,${Schedules.stu_id},${Schedules.sel_chapter},${Schedules.sel_que_id},${Schedules.teacher_id},${status.count});">提交</a></td>
-                </tr>
-                </c:forEach>
-                </tr>
+                    <td>
+                        <label><input type="text" name="judgeText"></label>
+                        <a class="btn btn-default" href="javascript:judge(&quot ${Schedules.exam_name}&quot,${Schedules.stu_id},${Schedules.sel_chapter},${Schedules.sel_que_id},${Schedules.teacher_id},${status.count});">提交</a></td>
+                    </tr>
+                    </c:forEach>
                 </tbody>
             </table>
         </div>

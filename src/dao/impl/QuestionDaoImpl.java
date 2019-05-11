@@ -9,7 +9,6 @@ import util.JDBCUtils;
 import java.util.List;
 
 public class QuestionDaoImpl implements QuestionDao {
-
     private JdbcTemplate template = new JdbcTemplate(JDBCUtils.getDataSource());
 
     @Override

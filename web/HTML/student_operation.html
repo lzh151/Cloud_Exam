@@ -20,15 +20,11 @@
     <![endif]-->
 
     <style>
-        .picture{
-            height: 250px;
-            border-bottom: 1px solid #cccccc;
-        }
         .menu{
             border-bottom: 1px solid #cccccc;
             padding-left: 35px;
             padding-right: 35px;
-            margin-bottom: 0px
+            margin-bottom: 0
         }
         .p_footer{
             background: #f9f9f9;
@@ -74,7 +70,9 @@
                 <!--搜索栏-->
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </label>
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
@@ -84,15 +82,15 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="HTML/student_login.jsp">学生</a></li>
-                            <li><a href="HTML/teacher_login.jsp">教师</a></li>
+                            <li><a href="/HTML/student_login.jsp">学生</a></li>
+                            <li><a href="/HTML/teacher_login.jsp">教师</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">注册 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="HTML/student_register.jsp">学生</a></li>
-                            <li><a href="HTML/teacher_register.jsp">教师</a></li>
+                            <li><a href="/HTML/student_register.jsp">学生</a></li>
+                            <li><a href="/HTML/teacher_register.jsp">教师</a></li>
                         </ul>
                     </li>
 

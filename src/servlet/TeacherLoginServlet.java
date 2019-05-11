@@ -1,9 +1,6 @@
 package servlet;
 
-import domain.Answer_sheet;
-import domain.Question;
-import domain.Student;
-import domain.Teacher;
+import domain.*;
 import org.apache.commons.beanutils.BeanUtils;
 import service.*;
 import service.impl.*;
@@ -32,33 +29,37 @@ public class TeacherLoginServlet extends HttpServlet {
 
         try {
             BeanUtils.populate(teacher,map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
 
         TeacherService service = new TeacherServiceImpl();
         Teacher loginTeacher = service.login(teacher);
 
-        QuestionService questionService = new QuestionServiceImpl();
-        List<Question> questions = questionService.FindAllQuestionByTeacherId(loginTeacher.getId());
-
-        StudentService studentService = new StudentServiceImpl();
-        List<Student> students = studentService.findByTeacherId(loginTeacher.getId());
-
-        Answer_sheetService answer_sheetService = new Answer_sheetServiceImpl();
-        List<Answer_sheet> answer_sheets = answer_sheetService.FindAllByTeaId(loginTeacher.getId());
-
         if(loginTeacher != null){
             StateService service1 = new StateServiceImpl();
-            service1.AddTeacherState(loginTeacher);
+            List<State> stateList = service1.findStateByTeacherId(loginTeacher.getId());
+            if(stateList != null){
+                QuestionService questionService = new QuestionServiceImpl();
+                List<Question> questions = questionService.FindAllQuestionByTeacherId(loginTeacher.getId());
 
-            session.setAttribute("teacher",loginTeacher);
-            session.setAttribute("question",questions);
-            session.setAttribute("student",students);
-            session.setAttribute("Schedule",answer_sheets);
-            response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
+                StudentService studentService = new StudentServiceImpl();
+                List<Student> students = studentService.findByTeacherId(loginTeacher.getId());
+
+                Answer_sheetService answer_sheetService = new Answer_sheetServiceImpl();
+                List<Answer_sheet> answer_sheets = answer_sheetService.FindAllByTeaId(loginTeacher.getId());
+
+                service1.AddTeacherState(loginTeacher);
+                session.setAttribute("teacher",loginTeacher);
+                session.setAttribute("question",questions);
+                session.setAttribute("student",students);
+                session.setAttribute("Schedule",answer_sheets);
+                response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
+            }
+            else{
+                request.setAttribute("login_msg","请勿重复登录");
+                request.getRequestDispatcher("/HTML/teacher_login.jsp").forward(request,response);
+            }
         }
         else{
             request.setAttribute("login_msg","用户名密码错误");

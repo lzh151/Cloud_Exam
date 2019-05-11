@@ -19,9 +19,9 @@ public class AddStuToSysServlet extends HttpServlet {
         //System.out.println(questionIds[0].charAt(0));
 
         ArrayList<Student> list = new ArrayList<>();
-        for (int i = 0; i < totalStudents.length; i++) {
+        for (String totalStudent : totalStudents) {
             Student student = new Student();
-            String[] split = totalStudents[i].split(",");
+            String[] split = totalStudent.split(",");
             student.setId(Integer.parseInt(split[0]));
             student.setName(split[1]);
             list.add(student);
@@ -32,7 +32,7 @@ public class AddStuToSysServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request,response);
     }
 }

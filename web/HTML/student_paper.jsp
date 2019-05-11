@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -42,15 +41,11 @@
 
     <link href="../css/form_self.css" rel="stylesheet">
     <style>
-        .picture{
-            height: 250px;
-            border-bottom: 1px solid #cccccc;
-        }
         .menu{
             border-bottom: 1px solid #cccccc;
             padding-left: 35px;
             padding-right: 35px;
-            margin-bottom: 0px
+            margin-bottom: 0
         }
         .p_footer{
             background: #f9f9f9;
@@ -82,7 +77,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
                     <!--下拉列表-->
@@ -99,7 +94,9 @@
                 <!--搜索栏-->
                 <form class="navbar-form navbar-right">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <label>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </label>
                     </div>
                     <button type="submit" class="btn btn-default">搜索</button>
                 </form>
@@ -107,7 +104,7 @@
                 <!--登录注册-->
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="teacher_operation.jsp">${name}同学</a>
+                        <a href="student_operation.jsp">${name}同学</a>
                     </li>
                     <li class="dropdown">
                         <a href="javascript:quitState(${id})">注销</a>
@@ -140,18 +137,14 @@
                 </thead>
                 <tbody style="align-content: center" id="examTable">
                 <tr>
-<%--                    <c:forEach items="${examAllList}" var="exams" varStatus="status">--%>
                     <c:forEach items="${questionsList}" var="questions" varStatus="status">
-                <tr>
                     <td>${questions.exam_name}</td>
                     <td>${questions.chapter}</td>
                     <td>${questions.que_id}</td>
                     <td>${questions.type}</td>
                     <td>
                         <p>${questions.que_describe}</p>
-                        <img src="${questions.file_path}" style="height: 80px" alt="">
-                        <audio src="${questions.file_path}" style="height: 5px" alt=""></audio>
-                        <video src="${questions.file_path}" style="height: 5px" alt=""></video>
+                        <object src="${questions.file_path}" style="height: 80px" alt=""></object>
                     </td>
                     <td>${questions.answer_A}</td>
                     <td>${questions.answer_B}</td>
@@ -159,11 +152,11 @@
                     <td>${questions.answer_D}</td>
                     <td>${questions.remark}</td>
                     <td>${questions.answer}</td>
-                    <td><input type="text" name="Text"><a class="btn btn-default" href="javascript:addAnswer(&quot ${questions.exam_name}&quot,${questions.stu_id},${questions.chapter},${questions.que_id},${status.count});">提交</a></td>
+                    <td><label>
+                        <input type="text" name="Text">
+                    </label><a class="btn btn-default" href="javascript:addAnswer(&quot ${questions.exam_name}&quot,${questions.stu_id},${questions.chapter},${questions.que_id},${status.count});">提交</a></td>
                 </tr>
                     </c:forEach>
-<%--                    </c:forEach>--%>
-                </tr>
                 </tbody>
             </table>
         </div>

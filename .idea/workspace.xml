@@ -7,40 +7,240 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/domain/Question_Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/StudentQuitServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/HTML/student_paper.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsmartcom_zh_CN.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jspsmartupload.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/bootstrap-3.3.7-dist/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/dist/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/external/sizzle/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/external/sizzle/dist/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/external/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/external/sizzle/dist/sizzle.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/parseXML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/var/location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/var/nonce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/var/rquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/ajax/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/attributes/attr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/attributes/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/attributes/prop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/attributes/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/attributes/val.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/callbacks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/DOMEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/access.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/camelCase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/isAttached.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/nodeName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/parseHTML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/ready-no-deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/ready.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/readyException.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/stripAndCollapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/toType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/core/var/rsingleTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/addGetHookIf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/adjustCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/curCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/finalPropName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/showHide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/var/cssExpand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/var/getStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/var/isHiddenWithinTree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/var/rboxStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/css/var/swap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/data/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/data/var/acceptData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/data/var/dataPriv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/data/var/dataUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/deferred/exceptionHook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/deprecated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/effects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/effects/Tween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/effects/animatedSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/event/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/event/alias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/event/focusin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/event/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/event/trigger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/exports/amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/exports/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/buildFragment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/getAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/manipulation/wrapMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/offset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/queue/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/selector-native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/selector-sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/serialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/traversing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/traversing/findFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/traversing/var/dir.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/traversing/var/siblings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/ObjectFunctionString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/arr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/class2type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/concat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/document.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/documentElement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/fnToString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/getProto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/hasOwn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/indexOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/isFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/isWindow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/pnum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/rcheckableType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/rcssNum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/rnothtmlwhite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/var/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jquery-3.4.0/src/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/normanlee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/normanlee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cloud_Exam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud_Exam.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/Answer_sheetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/Answer_sheetDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/QuestionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/test.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/Answer_sheetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/Answer_sheetDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/QuestionDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/Answer_sheetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/Answer_sheetDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/QuestionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/TeacherDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/TeacherDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddStudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddTeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddTeacherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/Answer_sheetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/Answer_sheetDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/QuestionDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/StudentDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/StudentDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/TeacherDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/TeacherDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/druid.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddStudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddTeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddTeacherServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/QuestionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/StateDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/StateDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/TeacherDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/TeacherDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/Answer_sheetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Answer_sheetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/druid.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/druid.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/StateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/StateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/impl/StateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/StateServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/FindAllQuestionByTeacherIdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/FindAllQuestionByTeacherIdServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddQuestionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteQueFromSysServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteStuFromSysServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/StudentQuitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/StudentQuitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherOperaServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/student_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/HTML/student_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/student_operation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_operation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/HTML/student_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_operation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/student_paper.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_paper.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/student_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/c3p0-0.9.1.2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/c3p0-0.9.1.2.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-beanutils-1.8.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-beanutils-1.8.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/commons-logging-1.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/commons-logging-1.1.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/druid-1.0.9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/druid-1.0.9.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/javax.servlet.jsp.jstl.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/jstl-impl.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jstl-impl.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-8.0.15.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/mysql-connector-java-8.0.15.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-beans-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/spring-beans-4.2.4.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-core-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/spring-core-4.2.4.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-jdbc-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/spring-jdbc-4.2.4.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/lib/spring-tx-4.2.4.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/libs/spring-tx-4.2.4.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,118 +285,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
+        <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="160" column="38" selection-start-line="160" selection-start-column="38" selection-end-line="160" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/Question_Answer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-920">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="250">
+              <caret line="288" column="32" selection-start-line="288" selection-start-column="32" selection-end-line="288" selection-end-column="32" />
               <folding>
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#615#616#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#522#523#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#692#693#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#910#911#0" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/domain/Answer_sheet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-              <folding>
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#827#828#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/ViewExamServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="63" column="61" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="41" column="57" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/FindAllQuestionByTeacherIdServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="32" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#audio#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#form#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="70" column="63" lean-forward="true" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+            <state relative-caret-position="339">
+              <caret line="153" column="48" lean-forward="true" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/AddQuestionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1028#1029#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-510">
+              <caret column="49" selection-start-column="49" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="43" column="108" selection-start-line="43" selection-start-column="108" selection-end-line="43" selection-end-column="108" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,11 +368,13 @@
       <find>Student</find>
       <find>student</find>
       <find>Name</find>
+      <find>index.html</find>
     </findStrings>
     <replaceStrings>
       <replace>Student</replace>
       <replace>.jsp</replace>
       <replace>teacher</replace>
+      <replace>index.jsp</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -232,57 +383,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/src/dao/TeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/servlet/SelectQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/SelectQuestionByTeacherIdServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AddQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeletTeacherQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteTeacherQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java" />
-        <option value="$PROJECT_DIR$/src/domain/Question.java" />
-        <option value="$PROJECT_DIR$/src/dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/src/service/impl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteStudentServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java" />
-        <option value="$PROJECT_DIR$/web/HTML/student_register.jsp" />
-        <option value="$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteQueFromSysServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/DeleteStuFromSysServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" />
-        <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" />
-        <option value="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" />
-        <option value="$PROJECT_DIR$/src/domain/Answer_sheet.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/HTML/student_login.jsp" />
-        <option value="$PROJECT_DIR$/src/servlet/viewExamServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/FindAllQuestionByTeacherIdServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" />
-        <option value="$PROJECT_DIR$/src/service/Answer_sheetService.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/HTML/student_operation.jsp" />
-        <option value="$PROJECT_DIR$/src/service/StateService.java" />
-        <option value="$PROJECT_DIR$/src/servlet/StudentQuitServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/service/impl/StateServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" />
-        <option value="$PROJECT_DIR$/src/dao/QuestionDao.java" />
         <option value="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/service/QuestionService.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/HTML/student_paper.jsp" />
         <option value="$PROJECT_DIR$/src/domain/Question_Answer.java" />
-        <option value="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/TeacherOperaServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/DeleteStuFromSysServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/druid.properties" />
+        <option value="$PROJECT_DIR$/src/dao/QuestionDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/TeacherDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" />
+        <option value="$PROJECT_DIR$/web/HTML/student_login.html" />
+        <option value="$PROJECT_DIR$/web/HTML/student_operation.html" />
+        <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/StudentQuitServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/student_register.html" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_login.html" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_operation.html" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_register.html" />
+        <option value="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/dao/StateDao.java" />
+        <option value="$PROJECT_DIR$/src/service/impl/StateServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/service/StateService.java" />
+        <option value="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_register.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_login.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/student_register.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/student_login.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/student_operation.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/temp.java" />
+        <option value="$PROJECT_DIR$/src/servlet/UploadUtils.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddQuestionServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/student_paper.jsp" />
       </list>
     </option>
   </component>
@@ -293,10 +444,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="961" />
+    <option name="height" value="962" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -304,7 +455,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,38 +466,6 @@
               <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
@@ -366,16 +484,11 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="HTML" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -387,7 +500,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/libs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -399,11 +512,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/HTML" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="domain" />
@@ -412,10 +525,11 @@
       <recent name="service" />
       <recent name="dao.impl" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/HTML" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/libs" />
       <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/web/HTML" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -595,7 +709,15 @@
       <workItem from="1557015837272" duration="4401000" />
       <workItem from="1557135515084" duration="250000" />
       <workItem from="1557397034694" duration="16362000" />
-      <workItem from="1557454549658" duration="33122000" />
+      <workItem from="1557454549658" duration="33473000" />
+      <workItem from="1557505047004" duration="7000" />
+      <workItem from="1557554358484" duration="4683000" />
+      <workItem from="1557559151583" duration="128000" />
+      <workItem from="1557559328520" duration="232000" />
+      <workItem from="1557559587143" duration="302000" />
+      <workItem from="1557559894912" duration="14000" />
+      <workItem from="1557559931211" duration="362000" />
+      <workItem from="1557560299394" duration="29681000" />
     </task>
     <task id="LOCAL-00001" summary="Update attribute and fix such error">
       <created>1556283184115</created>
@@ -632,11 +754,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557490985886</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finish student answer modules">
+      <created>1557504673253</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557504673253</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118769000" />
+    <option name="totallyTimeSpent" value="154529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,19 +777,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="962" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7068677" visible="true" weight="0.26800978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6919918" visible="true" weight="0.2936508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.29313233" side_tool="true" visible="true" weight="0.26800978" />
+      <window_info id="Web" order="7" sideWeight="0.30800822" side_tool="true" visible="true" weight="0.2936508" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.495116" visible="true" weight="0.39081633" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.489011" visible="true" weight="0.4402299" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -668,13 +797,13 @@
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.504884" side_tool="true" weight="0.24489796" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.493895" weight="0.32857144" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51770455" side_tool="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48229548" weight="0.32857144" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.498779" weight="0.32959184" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32959184" />
-      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32959184" />
+      <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.498779" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -693,276 +822,179 @@
     <MESSAGE value="Update attribute and fix such error" />
     <MESSAGE value="Complete login and register modules, Add new function in teacher_operation.jsp etc." />
     <MESSAGE value="Finish teacher all modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish teacher all modules" />
+    <MESSAGE value="Finish student answer modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish student answer modules" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="104" column="3" selection-start-line="104" selection-start-column="3" selection-end-line="104" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteStuFromSysServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteQueFromSysServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddQuestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherOperaServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="48" lean-forward="true" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/CreateExamServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="70" column="88" selection-start-line="70" selection-start-column="88" selection-end-line="70" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/servlet-api.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddTeacherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="735">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="88" lean-forward="true" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9bf2b874-f6d9-4fac-9153-52154977d013/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="16" column="94" lean-forward="true" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="123" column="46" selection-start-line="123" selection-start-column="46" selection-end-line="123" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4447#4453#0" expanded="true" />
+            <element signature="e#4462#4468#0" expanded="true" />
+            <element signature="e#4468#4474#0" expanded="true" />
+            <element signature="e#4483#4489#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddStudentServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="90" selection-start-line="34" selection-start-column="90" selection-end-line="34" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddTeacherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/CreateExamServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/Answer_sheetDao.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="17" column="91" selection-start-line="17" selection-start-column="91" selection-end-line="17" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/Answer_sheetService.java">
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1305#1306#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="278">
+          <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/StateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="203">
+          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/State.java">
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="203">
+          <caret line="136" column="47" selection-start-line="136" selection-start-column="47" selection-end-line="136" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/StudentService.java">
+    <entry file="file://$PROJECT_DIR$/web/HTML/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/StudentQuitServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/service/TeacherService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="37">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_login.jsp">
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="100" column="104" lean-forward="true" selection-start-line="100" selection-start-column="104" selection-end-line="100" selection-end-column="104" />
+        <state relative-caret-position="390">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1740">
+          <caret line="116" column="58" selection-start-line="116" selection-start-column="58" selection-end-line="116" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="75" lean-forward="true" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/impl/StudentServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/ViewExamServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="210">
+          <caret line="30" column="100" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="28" column="99" selection-start-line="28" selection-start-column="99" selection-end-line="28" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/FindAllQuestionByTeacherIdServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/libs/spring-beans-4.2.4.RELEASE.jar!/org/springframework/beans/TypeConverterDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/libs/spring-jdbc-4.2.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="533" selection-start-line="533" selection-end-line="533" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/StateService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        <state relative-caret-position="315">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -971,67 +1003,121 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/impl/StateServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="415">
+          <caret line="49" column="32" lean-forward="true" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#930#931#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#1058#1059#0" expanded="true" />
+            <element signature="e#1107#1108#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
+    <entry file="file://$PROJECT_DIR$/src/dao/StateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="279" column="58" selection-start-line="279" selection-start-column="58" selection-end-line="279" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-721">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/StudentLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="45" column="104" selection-start-line="45" selection-start-column="104" selection-end-line="45" selection-end-column="104" />
+        <state relative-caret-position="210">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/QuestionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://7ac829d4-b133-473e-b1b4-9ba5ea018990/schema/javaproject/table/login_state">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="761d1e01-3b04-4b0d-aaf7-5927baa4337a">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/StudentQuitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/QuestionService.java">
+    <entry file="file://$PROJECT_DIR$/src/servlet/StudentLoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="420">
+          <caret line="42" column="59" lean-forward="true" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="123" column="75" selection-start-line="123" selection-start-column="75" selection-end-line="123" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="148" column="90" selection-start-line="148" selection-start-column="90" selection-end-line="148" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/loader/WebappClassLoaderBase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="817" selection-start-line="817" selection-end-line="817" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="48" column="90" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1040,8 +1126,97 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="32" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="32" />
+        <state relative-caret-position="225">
+          <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="34" column="64" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret column="49" selection-start-column="49" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/temp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="69" column="58" lean-forward="true" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/UploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/File/temp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddQuestionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="43" column="108" selection-start-line="43" selection-start-column="108" selection-end-line="43" selection-end-column="108" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1050,95 +1225,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Question_Answer.java">
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-920">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="250">
+          <caret line="288" column="32" selection-start-line="288" selection-start-column="32" selection-end-line="288" selection-end-column="32" />
           <folding>
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#615#616#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#audio#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#form#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Answer_sheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="160" column="38" selection-start-line="160" selection-start-column="38" selection-end-line="160" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/FindAllQuestionByTeacherIdServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ViewExamServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="63" column="61" selection-start-line="63" selection-start-column="45" selection-end-line="63" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="41" column="57" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="70" column="63" lean-forward="true" selection-start-line="70" selection-start-column="63" selection-end-line="70" selection-end-column="63" />
+        <state relative-caret-position="339">
+          <caret line="153" column="48" lean-forward="true" selection-start-line="153" selection-start-column="48" selection-end-line="153" selection-end-column="48" />
         </state>
       </provider>
     </entry>
