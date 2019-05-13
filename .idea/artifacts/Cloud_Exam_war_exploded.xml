@@ -19,6 +19,10 @@
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/spring-core-4.2.4.RELEASE.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/spring-jdbc-4.2.4.RELEASE.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/spring-beans-4.2.4.RELEASE.jar" />
+
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/aip-java-sdk-4.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/json-20160810.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/libs/log4j-1.2.17.jar" />
           <element id="library" level="project" name="lib" />
         </element>
       </element>

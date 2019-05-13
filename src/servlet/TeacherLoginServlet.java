@@ -65,7 +65,6 @@ public class TeacherLoginServlet extends HttpServlet {
             request.setAttribute("login_msg","用户名密码错误");
             request.getRequestDispatcher("/HTML/teacher_login.jsp").forward(request,response);
         }
-
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
