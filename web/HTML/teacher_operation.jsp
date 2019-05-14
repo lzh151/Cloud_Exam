@@ -46,7 +46,9 @@
             location.href="${pageContext.request.contextPath}/recordVoiceServlet";
         }
         function deleteSchedule(exam_name,stu_id,stu_name,teacher_id) {
-            location.href="${pageContext.request.contextPath}/deleteScheduleServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&stu_name=" + stu_name + "&teacher_id=" + teacher_id;
+            if(confirm("确定删除吗?")){
+                location.href="${pageContext.request.contextPath}/deleteScheduleServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&stu_name=" + stu_name + "&teacher_id=" + teacher_id;
+            }
         }
 
         function selectQuestion() {

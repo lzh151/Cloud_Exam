@@ -46,7 +46,7 @@ public class RecordVoiceServlet extends HttpServlet {
 
         save();
 
-        System.out.println("save out!");
+        //System.out.println("save out!");
         String text =  SpeechToText.SpeechToVoice(contextPath + "/File/test.pcm");
 
         int begin = text.indexOf("\"result\": [\"");
@@ -216,7 +216,7 @@ public class RecordVoiceServlet extends HttpServlet {
         public void run() {
             baos = new ByteArrayOutputStream();
             try {
-                System.out.println("ok3");
+                //System.out.println("ok3");
                 stopflag = false;
                 while(stopflag != true)
                 {
