@@ -45,5 +45,15 @@ public class Answer_sheetServiceImpl implements Answer_sheetService {
         answer_sheetDao.AddStudentAnswer(answer_sheet);
     }
 
+    @Override
+    public void DeleteAllStudentExam(String exam_name, int stu_id, String stu_name) {
+        answer_sheetDao.DeleteAllStudentExam(exam_name,stu_id,stu_name);
+    }
+
+    @Override
+    public void AddBoolMark(Boolean mark) {
+        answer_sheetDao.AddBoolMark(mark);
+    }
+
 
 }

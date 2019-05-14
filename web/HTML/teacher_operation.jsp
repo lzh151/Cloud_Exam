@@ -45,6 +45,22 @@
         function record() {
             location.href="${pageContext.request.contextPath}/recordVoiceServlet";
         }
+        function deleteSchedule(exam_name,stu_id,stu_name,teacher_id) {
+            location.href="${pageContext.request.contextPath}/deleteScheduleServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&stu_name=" + stu_name + "&teacher_id=" + teacher_id;
+        }
+
+        function selectQuestion() {
+            var chapter = document.getElementById("que_chapter").value;
+            var type = document.getElementById("que_type").value;
+            if(chapter === ""){
+                chapter = 0;
+            }
+            if(type === ""){
+                type = "type";
+            }
+            location.href="${pageContext.request.contextPath}/selectQuestionServlet?chapter=" + chapter + "&type=" + type + "&teacher_id=" + ${teacher.id};
+        }
+
     </script>
 
     <link href="../css/form_self.css" rel="stylesheet">
@@ -259,14 +275,14 @@
         <!-- 筛选栏 -->
         <form class="form-inline" style="margin-top: 5px; float: right; margin-right: 60px;">
             <div class="form-group">
-                <label for="exampleInputName1">单元</label>
-                <input type="text" class="form-control" id="exampleInputName1">
+                <label for="que_chapter">单元</label>
+                <input type="text" class="form-control" id="que_chapter">
             </div>
             <div class="form-group">
-                <label for="exampleInputEmail2">类型</label>
-                <input type="text" class="form-control" id="exampleInputEmail2">
+                <label for="que_type">类型</label>
+                <input type="text" class="form-control" id="que_type">
             </div>
-            <button type="submit" class="btn btn-default">筛选</button>
+            <a class="btn btn-default" href="javascript:selectQuestion()">筛选</a>
         </form>
 
         <form action="${pageContext.request.contextPath}/addQueToSysServlet" method="post">
@@ -435,9 +451,9 @@
             $("#intelligentProduce").fadeToggle();
         });
     });
-    $("#searchQuestion").hide();
-    $("#List").hide();
-    $("#intelligentProduce").hide();
+    // $("#searchQuestion").hide();
+    // $("#List").hide();
+    // $("#intelligentProduce").hide();
 </script>
 
 <%--答题进度--%>
@@ -458,7 +474,7 @@
                     <td>${Schedules.exam_name}</td>
                     <td>${Schedules.stu_id}</td>
                     <td>${Schedules.stu_name}</td>
-                    <td><a class="btn btn-default btn-sm" href="javascript:selectSchedule(&quot${Schedules.exam_name}&quot,${Schedules.stu_id},&quot ${Schedules.stu_name}&quot);">查看</a></td>
+                    <td><a class="btn btn-default btn-sm" href="javascript:selectSchedule(&quot${Schedules.exam_name}&quot,${Schedules.stu_id},&quot ${Schedules.stu_name}&quot);">查看</a><a class="btn btn-default btn-sm" href="javascript:deleteSchedule(&quot${Schedules.exam_name}&quot,${Schedules.stu_id},&quot ${Schedules.stu_name}&quot,${teacher.id});">删除</a></td>
                     </tr>
                     </c:forEach>
                 </tbody>
@@ -475,7 +491,7 @@
             $("#Schedule").fadeToggle();
         });
     });
-    $("#Schedule").hide();
+    // $("#Schedule").hide();
 </script>
 
 <!--版权声明-->

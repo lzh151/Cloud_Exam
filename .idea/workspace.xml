@@ -7,23 +7,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/aip_java_sdk_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/aip-java-sdk-4.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/json-20160810.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/SpeechToText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/aip-java-sdk-4.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/json-20160810.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/log4j-1.2.17.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9bf2b874-f6d9-4fac-9153-52154977d013.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsmartcom_zh_CN.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jspsmartupload.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/DeleteScheduleServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/SelectQuestionServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cloud_Exam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud_Exam.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/Answer_sheetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/Answer_sheetDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/QuestionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/Answer_sheetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/Answer_sheetDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/dao/impl/QuestionDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddStudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddTeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/classes/servlet/AddTeacherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/Answer_sheetDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/Answer_sheetDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/QuestionDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/QuestionDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/Answer_sheetDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/Answer_sheetDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/QuestionDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/dao/impl/QuestionDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddStudentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddStudentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddTeacherServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cloud_Exam/servlet/AddTeacherServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/QuestionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/QuestionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Answer_sheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Answer_sheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/Answer_sheetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/Answer_sheetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/QuestionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,27 +85,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2290">
-              <caret line="7" column="72" lean-forward="true" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
-              <folding>
-                <element signature="e#680#905#0#HTML" />
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#a#0;n#td#3;n#tr#3;n#table#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="-5735">
+              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/SpeechToText.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,13 +116,66 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/domain/Answer_sheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="187">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#1083#1084#0" expanded="true" />
+                <element signature="e#1136#1137#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1257#1258#0" expanded="true" />
+                <element signature="e#1312#1313#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#2053#2054#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/QuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/ViewExamServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="64" column="84" lean-forward="true" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/SelectQuestionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -140,23 +213,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/servlet/DeleteStuFromSysServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/druid.properties" />
-        <option value="$PROJECT_DIR$/src/dao/QuestionDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/TeacherDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/TeacherDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/StudentDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/HTML/student_login.html" />
-        <option value="$PROJECT_DIR$/web/HTML/student_operation.html" />
-        <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddStuToSysServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/StudentQuitServlet.java" />
@@ -165,20 +224,14 @@
         <option value="$PROJECT_DIR$/web/HTML/teacher_login.html" />
         <option value="$PROJECT_DIR$/web/HTML/teacher_operation.html" />
         <option value="$PROJECT_DIR$/web/HTML/teacher_register.html" />
-        <option value="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" />
-        <option value="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/dao/StateDao.java" />
         <option value="$PROJECT_DIR$/src/service/impl/StateServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/service/StateService.java" />
         <option value="$PROJECT_DIR$/src/dao/impl/StateDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" />
-        <option value="$PROJECT_DIR$/web/HTML/teacher_register.jsp" />
         <option value="$PROJECT_DIR$/web/HTML/teacher_login.jsp" />
-        <option value="$PROJECT_DIR$/web/HTML/student_register.jsp" />
         <option value="$PROJECT_DIR$/web/HTML/student_login.jsp" />
         <option value="$PROJECT_DIR$/web/HTML/student_operation.jsp" />
-        <option value="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/temp.java" />
         <option value="$PROJECT_DIR$/src/servlet/UploadUtils.java" />
@@ -190,7 +243,27 @@
         <option value="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" />
         <option value="$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/SpeechToText.java" />
+        <option value="$PROJECT_DIR$/src/servlet/CreateExamServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/DeleteScheduleServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_register.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/QuestionDao.java" />
+        <option value="$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/service/QuestionService.java" />
         <option value="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" />
+        <option value="$PROJECT_DIR$/src/servlet/SelectQuestionServlet.java" />
+        <option value="$PROJECT_DIR$/src/domain/Answer_sheet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/Answer_sheetDao.java" />
+        <option value="$PROJECT_DIR$/src/service/Answer_sheetService.java" />
+        <option value="$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/student_register.jsp" />
+        <option value="$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java" />
       </list>
     </option>
   </component>
@@ -201,7 +274,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="962" />
@@ -212,8 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,12 +295,63 @@
             <path>
               <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,6 +582,8 @@
       <workItem from="1557559931211" duration="362000" />
       <workItem from="1557560299394" duration="29984000" />
       <workItem from="1557630538051" duration="8839000" />
+      <workItem from="1557743200537" duration="680000" />
+      <workItem from="1557835553012" duration="7997000" />
     </task>
     <task id="LOCAL-00001" summary="Update attribute and fix such error">
       <created>1556283184115</created>
@@ -510,11 +634,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557593201628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Speech To Text function in teacher module">
+      <created>1557743347931</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557743347931</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163671000" />
+    <option name="totallyTimeSpent" value="172348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -529,17 +660,17 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6885246" visible="true" weight="0.2973138" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.68509984" visible="true" weight="0.30463982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.3114754" side_tool="true" visible="true" weight="0.2973138" />
+      <window_info id="Web" order="7" sideWeight="0.31490016" side_tool="true" visible="true" weight="0.30463982" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48351648" weight="0.4397959" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48351648" visible="true" weight="0.33571428" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497558" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,11 +678,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4993895" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51648355" side_tool="true" visible="true" weight="0.4397959" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502442" side_tool="true" weight="0.2908046" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48107448" weight="0.32857144" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.498779" weight="0.29183674" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.497558" weight="0.2908046" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.498779" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -574,233 +705,10 @@
     <MESSAGE value="Finish teacher all modules" />
     <MESSAGE value="Finish student answer modules" />
     <MESSAGE value="Finish all upload modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish all upload modules" />
+    <MESSAGE value="Add Speech To Text function in teacher module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Speech To Text function in teacher module" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="148" column="90" selection-start-line="148" selection-start-column="90" selection-end-line="148" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/loader/WebappClassLoaderBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="817" selection-start-line="817" selection-end-line="817" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="48" column="90" selection-start-line="48" selection-start-column="90" selection-end-line="48" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="74" lean-forward="true" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherQuitServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/temp.java" />
-    <entry file="file://$PROJECT_DIR$/src/servlet/UploadUtils.java" />
-    <entry file="file://$PROJECT_DIR$/web/File/temp" />
-    <entry file="file://$PROJECT_DIR$/src/domain/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" selection-start-column="49" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/test.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteTeacherIdServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" column="86" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddQuestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="90" column="62" selection-start-line="90" selection-start-column="62" selection-end-line="90" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/libs/json-20160810.jar!/org/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/json-20160810-sources.jar!/org/json/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/aip-java-sdk-4.1.1/json-20160810.jar!/org/json/JSONObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/connector/Request.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="462" selection-start-line="462" selection-end-line="462" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/valves/ErrorReportValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/core/StandardHostValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/authenticator/AuthenticatorBase.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="317" selection-start-line="317" selection-end-line="317" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/core/StandardContextValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/core/StandardWrapperValve.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/web/WEB-INF/libs/aip-java-sdk-4.1.1.jar!/com/baidu/aip/speech/AipSpeech.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -877,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/SpeechToText.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="345">
           <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -887,25 +795,255 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="375">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteQuestionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddQueToSysServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/DeleteScheduleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="40" column="90" selection-start-line="40" selection-start-column="90" selection-end-line="40" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/StudentLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddTeacherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddStudentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="148" column="47" selection-start-line="148" selection-start-column="47" selection-end-line="148" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="116" column="26" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/StateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/web/WEB-INF/libs/spring-beans-4.2.4.RELEASE.jar!/org/springframework/beans/TypeConverterDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/QuestionDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="134" column="29" lean-forward="true" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="45" column="78" lean-forward="true" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/Answer_sheetDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Answer_sheetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="159" column="81" selection-start-line="159" selection-start-column="81" selection-end-line="159" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/impl/Answer_sheetServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="54" column="42" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+          <folding>
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/CreateExamServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ViewExamServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="64" column="84" lean-forward="true" selection-start-line="64" selection-start-column="84" selection-end-line="64" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/SelectQuestionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="42" column="55" lean-forward="true" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2290">
-          <caret line="7" column="72" lean-forward="true" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        <state relative-caret-position="-5735">
+          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/core/StandardWrapperValve.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/impl/Answer_sheetDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
-            <element signature="e#680#905#0#HTML" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#td#3;n#tr#3;n#table#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Tomcat/lib/catalina.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Answer_sheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1312#1313#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/impl/QuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/impl/QuestionDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherSelectScheduleServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="51" lean-forward="true" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
         </state>
       </provider>
     </entry>

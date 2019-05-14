@@ -10,18 +10,40 @@ public class Answer_sheet {
     private String exam_name;
     private String answer_correct;
     private String remark;
+    private int true_counter;
+    private int false_counter;
 
     @Override
     public String toString() {
         return "Answer_sheet{" +
                 "stu_id=" + stu_id +
-                ", stu_name=" + stu_name +
+                ", stu_name='" + stu_name + '\'' +
                 ", sel_chapter=" + sel_chapter +
                 ", sel_que_id=" + sel_que_id +
                 ", answer='" + answer + '\'' +
                 ", teacher_id=" + teacher_id +
-                ", exam_name=" + exam_name +
+                ", exam_name='" + exam_name + '\'' +
+                ", answer_correct='" + answer_correct + '\'' +
+                ", remark='" + remark + '\'' +
+                ", true_counter=" + true_counter +
+                ", false_counter=" + false_counter +
                 '}';
+    }
+
+    public int getTrue_counter() {
+        return true_counter;
+    }
+
+    public void setTrue_counter(int true_counter) {
+        this.true_counter = true_counter;
+    }
+
+    public int getFalse_counter() {
+        return false_counter;
+    }
+
+    public void setFalse_counter(int false_counter) {
+        this.false_counter = false_counter;
     }
 
     public String getRemark() {

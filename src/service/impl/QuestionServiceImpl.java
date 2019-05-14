@@ -35,4 +35,9 @@ public class QuestionServiceImpl implements QuestionService {
         return dao.SearchAnswer(chapter,que_id,teacher_id);
     }
 
+    @Override
+    public List<Question> SelectQuestion(int chapter, String type) {
+        return dao.SelectQuestion(chapter,type);
+    }
+
 }

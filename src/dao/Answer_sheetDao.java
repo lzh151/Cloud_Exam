@@ -18,4 +18,8 @@ public interface Answer_sheetDao {
     List<Answer_sheet> FindAllByStudentIdAndExamName(int stu_id,String exam_name);
 
     void AddStudentAnswer(Answer_sheet answer_sheet);
+
+    void DeleteAllStudentExam(String exam_name, int stu_id, String stu_name);
+
+    void AddBoolMark(Boolean mark);
 }

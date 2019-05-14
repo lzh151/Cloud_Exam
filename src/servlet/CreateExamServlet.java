@@ -59,10 +59,14 @@ public class CreateExamServlet extends HttpServlet {
             }
         }
 
+        Answer_sheetService answer_sheetService = new Answer_sheetServiceImpl();
+        List<Answer_sheet> answer_sheets = answer_sheetService.FindAllByTeaId(teacherId);
+
         HttpSession session = request.getSession();
         session.setAttribute("exam_name",null);
         session.setAttribute("StuTable",null);
         session.setAttribute("QueTable",null);
+        session.setAttribute("Schedule",answer_sheets);
         response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
     }
 

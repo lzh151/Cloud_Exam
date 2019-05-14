@@ -5,6 +5,7 @@ import org.apache.commons.beanutils.BeanUtils;
 import service.TeacherService;
 import service.impl.TeacherServiceImpl;
 
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,7 +16,7 @@ import java.util.Map;
 
 @WebServlet("/addTeacherServlet")
 public class AddTeacherServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.setCharacterEncoding("utf-8");
 
         Map<String,String[]> map = request.getParameterMap();
@@ -31,9 +32,12 @@ public class AddTeacherServlet extends HttpServlet {
         TeacherService service = new TeacherServiceImpl();
         service.addTeacher(teacher);
 
+        request.setAttribute("register_msg","注册成功!");
+        request.getRequestDispatcher("/HTML/teacher_register.jsp").forward(request,response);
+
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         doPost(request,response);
     }
 }

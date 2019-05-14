@@ -13,7 +13,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
 
     @Override
     public void AddAnswer(Answer_sheet answer_sheet) {
-        String sql = "insert into answer_sheet values(?,?,?,?,null,?,?,null)";
+        String sql = "insert into answer_sheet values(?,?,?,?,null,?,?,null,0,0)";
         template.update(sql,answer_sheet.getStu_id(),answer_sheet.getStu_name(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id(),answer_sheet.getTeacher_id(),answer_sheet.getExam_name());
     }
 
@@ -71,5 +71,28 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     public void AddStudentAnswer(Answer_sheet answer_sheet) {
         String sql = "update answer_sheet set answer = ? where exam_name = ? and stu_id = ? and sel_chapter = ? and sel_que_id = ?";
         template.update(sql,answer_sheet.getAnswer(),answer_sheet.getExam_name(),answer_sheet.getStu_id(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id());
+    }
+
+    @Override
+    public void DeleteAllStudentExam(String exam_name, int stu_id, String stu_name) {
+        try {
+            String sql = "delete from answer_sheet where exam_name = ? and stu_id = ? and stu_name = ?";
+            template.update(sql,exam_name,stu_id,stu_name);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void AddBoolMark(Boolean mark) {
+        if (mark){
+            String sql = "update answer_sheet set false_counter = false_counter + 1";
+            template.update(sql);
+        }
+        else {
+            String sql = "update answer_sheet set true_counter = true_counter + 1";
+            template.update(sql);
+        }
     }
 }

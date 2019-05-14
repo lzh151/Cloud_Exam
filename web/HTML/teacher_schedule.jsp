@@ -156,7 +156,7 @@
                     <td>${Schedules.remark}</td>
                     <td>
                         <label><input type="text" name="judgeText"></label>
-                        <a class="btn btn-default" href="javascript:judge(&quot ${Schedules.exam_name}&quot,${Schedules.stu_id},${Schedules.sel_chapter},${Schedules.sel_que_id},${Schedules.teacher_id},${status.count});">提交</a></td>
+                        <a class="btn btn-default" href="javascript:judge(&quot ${Schedules.exam_name}&quot,${Schedules.stu_id},${Schedules.sel_chapter},${Schedules.sel_que_id},${Schedules.teacher_id},${status.count});">批改</a></td>
                     </tr>
                     </c:forEach>
                 </tbody>

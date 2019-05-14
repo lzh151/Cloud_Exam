@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
+import java.util.regex.Pattern;
 
 @WebServlet("/addJudgeTextServlet")
 public class AddJudgeTextServlet extends HttpServlet {
@@ -29,15 +30,19 @@ public class AddJudgeTextServlet extends HttpServlet {
         answer_sheet.setSel_chapter(Integer.parseInt(request.getParameter("chapter")));
         answer_sheet.setSel_que_id(Integer.parseInt(request.getParameter("que_id")));
         answer_sheet.setTeacher_id(Integer.parseInt(request.getParameter("teacher_id")));
-        answer_sheet.setRemark(request.getParameter("text"));
+        String text = request.getParameter("text");
+        answer_sheet.setRemark(text);
 
         Answer_sheetService service = new Answer_sheetServiceImpl();
         service.AddRemark(answer_sheet);
         List<Answer_sheet> answer_sheets = service.FindAllStudentExam(exam_name,Integer.parseInt(request.getParameter("stu_id")),request.getParameter("stu_name"));
         QuestionService questionService = new QuestionServiceImpl();
 
+        String bool = ".*错.*";
+        service.AddBoolMark(Pattern.matches(bool,text));
+
         for (Answer_sheet answerSheet : answer_sheets) {
-            String correctAnswer = questionService.SearchCorrectAnswer(answerSheet.getSel_chapter(), answerSheet.getSel_chapter(), answerSheet.getTeacher_id()).getCorrect_answer();
+            String correctAnswer = questionService.SearchCorrectAnswer(answerSheet.getSel_chapter(), answerSheet.getSel_que_id(), answerSheet.getTeacher_id()).getCorrect_answer();
             answerSheet.setAnswer_correct(correctAnswer);
         }
 

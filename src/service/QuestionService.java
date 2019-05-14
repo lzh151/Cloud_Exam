@@ -14,4 +14,6 @@ public interface QuestionService {
     Question SearchCorrectAnswer(int chapter,int que_id,int teacher_id);
 
     Question SearchAnswer(int chapter,int que_id,int teacher_id);
+
+    List<Question> SelectQuestion(int chapter, String type);
 }
