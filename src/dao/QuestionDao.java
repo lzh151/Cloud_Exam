@@ -16,5 +16,5 @@ public interface QuestionDao {
 
     Question SearchAnswer(int chapter,int que_id,int teacher_id);
 
-    List<Question> SelectQuestion(int chapter,String type);
+    List<Question> SelectQuestion(int chapter,String type, int teacher_id);
 }

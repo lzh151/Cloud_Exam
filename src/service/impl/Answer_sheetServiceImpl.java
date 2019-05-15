@@ -51,8 +51,18 @@ public class Answer_sheetServiceImpl implements Answer_sheetService {
     }
 
     @Override
-    public void AddBoolMark(Boolean mark) {
-        answer_sheetDao.AddBoolMark(mark);
+    public void AddBoolMark(Boolean mark,Answer_sheet answer_sheet) {
+        answer_sheetDao.AddBoolMark(mark,answer_sheet);
+    }
+
+    @Override
+    public List<Answer_sheet> FindStudentMistake(int stu_id) {
+        return answer_sheetDao.FindStudentMistake(stu_id);
+    }
+
+    @Override
+    public List<Answer_sheet> FindAllByStuId(int stu_id,int number) {
+        return answer_sheetDao.FindAllByStuId(stu_id,number);
     }
 
 

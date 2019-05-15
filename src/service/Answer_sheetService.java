@@ -22,5 +22,9 @@ public interface Answer_sheetService {
 
     void DeleteAllStudentExam(String exam_name,int stu_id, String stu_name);
 
-    void AddBoolMark(Boolean mark);
+    void AddBoolMark(Boolean mark,Answer_sheet answer_sheet);
+
+    List<Answer_sheet> FindStudentMistake(int stu_id);
+
+    List<Answer_sheet> FindAllByStuId(int stu_id,int number);
 }

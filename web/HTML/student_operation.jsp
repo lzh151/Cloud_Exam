@@ -31,6 +31,24 @@
         function viewExam(exam_name) {
             location.href="${pageContext.request.contextPath}/viewExamServlet?exam_name=" + exam_name + "&stu_id=${id}";
         }
+        function alterAnswer(exam_name,stu_id,chapter,que_id,index) {
+            var Element = document.getElementsByName("Text")[index - 1];
+            if (Element != null) {
+                var text = Element.value;
+                location.href="${pageContext.request.contextPath}/alterStudentAnswerServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&chapter=" + chapter + "&que_id=" + que_id + "&text=" + text + "&stu_name=${name}";
+            }
+            else{
+                confirm("请输入数据!");
+            }
+        }
+        function intelligentCreate() {
+            if(document.getElementById("number").value === ""){
+                confirm("请输入数据!");
+            }
+            else {
+                location.href="${pageContext.request.contextPath}/studentIntelligentCreateServlet?number=" + document.getElementById("number").value + "&student_id=${id}" + "&student_name=${name}";
+            }
+        }
     </script>
 
     <link href="../css/form_self.css" rel="stylesheet">
@@ -74,15 +92,6 @@
                     <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
-                    <!--下拉列表-->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">年级 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">高一</a></li>
-                            <li><a href="#">高二</a></li>
-                            <li><a href="#">高三</a></li>
-                        </ul>
-                    </li>
                 </ul>
 
                 <!--搜索栏-->
@@ -118,12 +127,67 @@
                 <td>操作</td>
                 </thead>
                 <tbody style="align-content: center" id="examTable">
+                <c:forEach items="${examList}" var="exams">
                 <tr>
-                    <c:forEach items="${examList}" var="exams">
                     <td>${exams.exam_name}</td>
                     <td><a class="btn btn-default" href="javascript:viewExam(&quot ${exams.exam_name}&quot);">查看</a></td>
-                    </c:forEach>
                 </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <div class="input-group" style="width: 30%">
+        <input type="text" class="form-control" id="number" placeholder="题量数">
+        <span class="input-group-btn">
+        <a class="btn btn-default" href="javascript:intelligentCreate()" id="create">智能生成试卷</a>
+        </span>
+    </div>
+</div>
+<hr>
+
+<%--答题进度--%>
+<div class="container" style="margin-top: 10px">
+    <div style="font-size: 20px; float: left;" id="mistakeSet">错题集</div>
+    <form class="form-inline"  id="mistakeForm" >
+        <div id="mistakeDiv">
+            <table class="table table-hover" style="margin-top: 50px;">
+                <thead class="font_size" style="align-content: center">
+                <td>试卷名称</td>
+                <td>单元</td>
+                <td>题号</td>
+                <td>类型</td>
+                <td>问题描述</td>
+                <td>选项A</td>
+                <td>选项B</td>
+                <td>选项C</td>
+                <td>选项D</td>
+                <td>批改记录</td>
+                <td>作答答案</td>
+                <td>作答</td>
+                </thead>
+                <tbody style="align-content: center" id="mistakeTable">
+                <tr>
+                    <c:forEach items="${mistakeList}" var="mistakes" varStatus="status">
+                    <td>${mistakes.exam_name}</td>
+                    <td>${mistakes.chapter}</td>
+                    <td>${mistakes.que_id}</td>
+                    <td>${mistakes.type}</td>
+                    <td>
+                        <p>${mistakes.que_describe}</p>
+                        <object data="${mistakes.file_path}" style="height: 80px" alt=""></object>
+                    </td>
+                    <td>${mistakes.answer_A}</td>
+                    <td>${mistakes.answer_B}</td>
+                    <td>${mistakes.answer_C}</td>
+                    <td>${mistakes.answer_D}</td>
+                    <td>${mistakes.remark}</td>
+                    <td>${mistakes.answer}</td>
+                    <td><label>
+                        <input type="text" name="Text">
+                    </label><a class="btn btn-default" href="javascript:alterAnswer(&quot ${mistakes.exam_name}&quot,${mistakes.stu_id},${mistakes.chapter},${mistakes.que_id},${status.count});">提交</a></td>
+                </tr>
+                </c:forEach>
                 </tbody>
             </table>
         </div>

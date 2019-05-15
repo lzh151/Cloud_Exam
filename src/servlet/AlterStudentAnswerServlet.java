@@ -18,9 +18,10 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
-@WebServlet("/addStudentAnswerServlet")
-public class AddStudentAnswerServlet extends HttpServlet {
+@WebServlet("/alterStudentAnswerServlet")
+public class AlterStudentAnswerServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         request.setCharacterEncoding("utf-8");
 
@@ -29,6 +30,7 @@ public class AddStudentAnswerServlet extends HttpServlet {
         String[] split = exam_name.split(" ");
         exam_name = split[1];
         answer_sheet.setExam_name(exam_name);
+
         answer_sheet.setStu_id(Integer.parseInt(request.getParameter("stu_id")));
         answer_sheet.setSel_chapter(Integer.parseInt(request.getParameter("chapter")));
         answer_sheet.setSel_que_id(Integer.parseInt(request.getParameter("que_id")));
@@ -75,25 +77,27 @@ public class AddStudentAnswerServlet extends HttpServlet {
                 answerSheet1.setSel_chapter(Integer.parseInt(request.getParameter("chapter")));
                 answerSheet1.setSel_que_id(Integer.parseInt(request.getParameter("que_id")));
                 answerSheet1.setTeacher_id(teacherId);
-                answerSheet1.setRemark("已提交,待批改");
+                answerSheet1.setRemark("已修改答案,待批改");
                 service.AddRemark(answerSheet1);
             }
         }
 
+        List<Answer_sheet> studentMistakes = service.FindStudentMistake(Integer.parseInt(request.getParameter("stu_id")));
+
         List<Question> questions = new ArrayList<>();
-        for (Answer_sheet answerSheet : answer_sheets) {
-            Question question = questionService.SearchAnswer(answerSheet.getSel_chapter(), answerSheet.getSel_que_id(), answerSheet.getTeacher_id());
+        for (Answer_sheet mistake : studentMistakes) {
+            Question question = questionService.SearchAnswer(mistake.getSel_chapter(), mistake.getSel_que_id(), mistake.getTeacher_id());
             questions.add(question);
         }
 
-        answer_sheets = service.FindAllByStudentIdAndExamName(Integer.parseInt(request.getParameter("stu_id")), exam_name);
-        List<Question_Answer> question_answers = new ArrayList<>();
-        for (int i = 0; i < answer_sheets.size(); i++) {
+        studentMistakes = service.FindStudentMistake(Integer.parseInt(request.getParameter("stu_id")));
+        List<Question_Answer> mistakes = new ArrayList<>();
+        for (int i = 0; i < studentMistakes.size(); i++) {
             Question_Answer question_answer = new Question_Answer();
 
-            question_answer.setExam_name(answer_sheets.get(i).getExam_name());
-            question_answer.setChapter(answer_sheets.get(i).getSel_chapter());
-            question_answer.setQue_id(answer_sheets.get(i).getSel_que_id());
+            question_answer.setExam_name(studentMistakes.get(i).getExam_name());
+            question_answer.setChapter(studentMistakes.get(i).getSel_chapter());
+            question_answer.setQue_id(studentMistakes.get(i).getSel_que_id());
             question_answer.setType(questions.get(i).getType());
             question_answer.setQue_describe(questions.get(i).getQue_describe());
             question_answer.setFile_path(questions.get(i).getFile_path());
@@ -101,16 +105,16 @@ public class AddStudentAnswerServlet extends HttpServlet {
             question_answer.setAnswer_B(questions.get(i).getAnswer_B());
             question_answer.setAnswer_C(questions.get(i).getAnswer_C());
             question_answer.setAnswer_D(questions.get(i).getAnswer_D());
-            question_answer.setRemark(answer_sheets.get(i).getRemark());
-            question_answer.setAnswer(answer_sheets.get(i).getAnswer());
-            question_answer.setTeacher_id(answer_sheets.get(i).getTeacher_id());
-            question_answer.setStu_id(answer_sheets.get(i).getStu_id());
-            question_answers.add(question_answer);
+            question_answer.setRemark(studentMistakes.get(i).getRemark());
+            question_answer.setAnswer(studentMistakes.get(i).getAnswer());
+            question_answer.setTeacher_id(studentMistakes.get(i).getTeacher_id());
+            question_answer.setStu_id(studentMistakes.get(i).getStu_id());
+            mistakes.add(question_answer);
         }
 
         HttpSession session = request.getSession();
-        session.setAttribute("questionsList",question_answers);
-        response.sendRedirect(request.getContextPath() + "/HTML/student_paper.jsp");
+        session.setAttribute("mistakeList",mistakes);
+        response.sendRedirect(request.getContextPath() + "/HTML/student_operation.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

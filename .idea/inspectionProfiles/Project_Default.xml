@@ -4,7 +4,7 @@
     <inspection_tool class="BadExpressionStatementJS" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="Duplicates" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Java>
-        <minSize>244</minSize>
+        <minSize>438</minSize>
         <isEnabled>true</isEnabled>
       </Java>
     </inspection_tool>

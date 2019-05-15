@@ -41,4 +41,6 @@ public interface StudentDao {
      * @return
      */
     List<Student> findByPage(int start, int rows, Map<String, String[]> condition);
+
+    int findTeacherId(int student_id);
 }

@@ -62,4 +62,9 @@ public class StudentServiceImpl implements StudentService {
     public void deleteTeacherId(int student_id, int teacher_id) {
         dao.deleteTeacherId(student_id,teacher_id);
     }
+
+    @Override
+    public int findTeacherId(int student_id) {
+        return dao.findTeacherId(student_id);
+    }
 }

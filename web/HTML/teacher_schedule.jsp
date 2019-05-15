@@ -92,15 +92,6 @@
                     <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
-                    <!--下拉列表-->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">年级 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">高一</a></li>
-                            <li><a href="#">高二</a></li>
-                            <li><a href="#">高三</a></li>
-                        </ul>
-                    </li>
                 </ul>
 
                 <!--搜索栏-->

@@ -85,14 +85,36 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     }
 
     @Override
-    public void AddBoolMark(Boolean mark) {
+    public void AddBoolMark(Boolean mark,Answer_sheet answer_sheet) {
         if (mark){
-            String sql = "update answer_sheet set false_counter = false_counter + 1";
-            template.update(sql);
+            String sql = "update answer_sheet set false_counter = false_counter + 1 where stu_id = ? and sel_chapter = ? and sel_que_id = ? and exam_name = ?";
+            template.update(sql,answer_sheet.getStu_id(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id(),answer_sheet.getExam_name());
         }
         else {
-            String sql = "update answer_sheet set true_counter = true_counter + 1";
-            template.update(sql);
+            String sql = "update answer_sheet set true_counter = true_counter + 1 where stu_id = ? and sel_chapter = ? and sel_que_id = ? and exam_name = ?";
+            template.update(sql,answer_sheet.getStu_id(),answer_sheet.getSel_chapter(),answer_sheet.getSel_que_id(),answer_sheet.getExam_name());
+        }
+    }
+
+    @Override
+    public List<Answer_sheet> FindStudentMistake(int stu_id) {
+        try {
+            String sql = "select * from answer_sheet where stu_id = ? and remark REGEXP '错'";
+            return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
+    public List<Answer_sheet> FindAllByStuId(int stu_id,int number) {
+        try {
+            String sql = "select * from  answer_sheet WHERE stu_id = ? ORDER BY false_counter - true_counter DESC LIMIT ?";
+            return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id,number);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }

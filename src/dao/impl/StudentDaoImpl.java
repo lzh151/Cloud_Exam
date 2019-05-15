@@ -82,4 +82,11 @@ public class StudentDaoImpl implements StudentDao {
     public List<Student> findByPage(int start, int rows, Map<String, String[]> condition) {
         return null;
     }
+
+    @Override
+    public int findTeacherId(int student_id) {
+        String sql = "select * from student where id = ?";
+        List<Student> query = template.query(sql, new BeanPropertyRowMapper<>(Student.class), student_id);
+        return query.get(0).getTeacher_id();
+    }
 }

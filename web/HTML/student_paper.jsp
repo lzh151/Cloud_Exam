@@ -29,7 +29,7 @@
 
         function addAnswer(exam_name,stu_id,chapter,que_id,index) {
             var Element = document.getElementsByName("Text")[index - 1];
-            if (Element != null) {
+            if (Element.value != null) {
                 var text = Element.value;
                 location.href="${pageContext.request.contextPath}/addStudentAnswerServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&chapter=" + chapter + "&que_id=" + que_id + "&text=" + text + "&stu_name=${name}";
             }
@@ -80,15 +80,6 @@
                     <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#">手动组卷</a></li>
                     <li><a href="#">智能组卷</a></li>
-                    <!--下拉列表-->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">年级 <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">高一</a></li>
-                            <li><a href="#">高二</a></li>
-                            <li><a href="#">高三</a></li>
-                        </ul>
-                    </li>
                 </ul>
 
                 <!--搜索栏-->
@@ -144,7 +135,7 @@
                     <td>${questions.type}</td>
                     <td>
                         <p>${questions.que_describe}</p>
-                        <object src="${questions.file_path}" style="height: 80px" alt=""></object>
+                        <object data="${questions.file_path}" style="height: 80px" alt=""></object>
                     </td>
                     <td>${questions.answer_A}</td>
                     <td>${questions.answer_B}</td>

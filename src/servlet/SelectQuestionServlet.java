@@ -29,7 +29,7 @@ public class SelectQuestionServlet extends HttpServlet {
         HttpSession session = request.getSession();
 
         QuestionService service  = new QuestionServiceImpl();
-        List<Question> questions = service.SelectQuestion(chapter, type);
+        List<Question> questions = service.SelectQuestion(chapter, type, teacher_id);
 
         session.setAttribute("question",questions);
 

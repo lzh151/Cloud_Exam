@@ -64,4 +64,6 @@ public interface StudentService {
      * @param student_id,teacher_id
      */
     void deleteTeacherId(int student_id,int teacher_id);
+
+    int findTeacherId(int student_id);
 }

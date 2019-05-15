@@ -25,6 +25,7 @@ public class AddJudgeTextServlet extends HttpServlet {
         String exam_name = request.getParameter("exam_name");
         String[] split = exam_name.split(" ");
         exam_name = split[1];
+
         answer_sheet.setExam_name(exam_name);
         answer_sheet.setStu_id(Integer.parseInt(request.getParameter("stu_id")));
         answer_sheet.setSel_chapter(Integer.parseInt(request.getParameter("chapter")));
@@ -39,7 +40,7 @@ public class AddJudgeTextServlet extends HttpServlet {
         QuestionService questionService = new QuestionServiceImpl();
 
         String bool = ".*错.*";
-        service.AddBoolMark(Pattern.matches(bool,text));
+        service.AddBoolMark(Pattern.matches(bool,text),answer_sheet);
 
         for (Answer_sheet answerSheet : answer_sheets) {
             String correctAnswer = questionService.SearchCorrectAnswer(answerSheet.getSel_chapter(), answerSheet.getSel_que_id(), answerSheet.getTeacher_id()).getCorrect_answer();

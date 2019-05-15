@@ -58,23 +58,23 @@ public class QuestionDaoImpl implements QuestionDao {
     }
 
     @Override
-    public List<Question> SelectQuestion(int chapter, String type) {
+    public List<Question> SelectQuestion(int chapter, String type, int teacher_id) {
         try {
             if (chapter == 0 && type.equals("type")){
-                String sql = "select * from question where chapter = chapter and type = type";
-                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class));
+                String sql = "select * from question where chapter = chapter and type = type and teacher_id = ?";
+                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class),teacher_id);
             }
             else if (chapter == 0 && !type.equals("type")){
-                String sql = "select * from question where chapter = chapter and type = ?";
-                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class), type);
+                String sql = "select * from question where chapter = chapter and type = ? and teacher_id = ?";
+                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class), type,teacher_id);
             }
             else if (chapter != 0 && type.equals("type")){
-                String sql = "select * from question where chapter = ? and type = type";
-                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class), chapter);
+                String sql = "select * from question where chapter = ? and type = type and teacher_id = ?";
+                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class), chapter,teacher_id);
             }
             else {
-                String sql = "select * from question where chapter = ? and type = ?";
-                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class), chapter,type);
+                String sql = "select * from question where chapter = ? and type = ? and teacher_id = ?";
+                return template.query(sql, new BeanPropertyRowMapper<Question>(Question.class), chapter,type,teacher_id);
             }
         } catch (Exception e) {
             e.printStackTrace();
