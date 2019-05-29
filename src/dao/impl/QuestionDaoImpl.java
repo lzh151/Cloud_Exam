@@ -29,6 +29,18 @@ public class QuestionDaoImpl implements QuestionDao {
     }
 
     @Override
+    public List<Question> FindAllQuestion() {
+        try {
+            String sql = "select * from question";
+            List<Question> list = template.query(sql, new BeanPropertyRowMapper<Question>(Question.class));
+            return list;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    @Override
     public void DeleteQuestion(Question question) {
         try {
             String sql = "delete from question where chapter = ? and que_id = ? and teacher_id = ?";

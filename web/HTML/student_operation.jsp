@@ -90,8 +90,8 @@
                 <!--选项-->
                 <ul class="nav navbar-nav">
                     <li><a href="../index.jsp">首页</a></li>
-                    <li><a href="#">手动组卷</a></li>
-                    <li><a href="#">智能组卷</a></li>
+                    <li><a href="#examLabel">试卷集</a></li>
+                    <li><a href="#mistakeSet">错题集</a></li>
                 </ul>
 
                 <!--搜索栏-->

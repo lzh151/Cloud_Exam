@@ -110,7 +110,7 @@ public class Answer_sheetDaoImpl implements Answer_sheetDao {
     @Override
     public List<Answer_sheet> FindAllByStuId(int stu_id,int number) {
         try {
-            String sql = "select * from  answer_sheet WHERE stu_id = ? ORDER BY false_counter - true_counter DESC LIMIT ?";
+            String sql = "select * from  answer_sheet WHERE stu_id = ? ORDER BY (false_counter - true_counter) DESC LIMIT ?";
             return template.query(sql, new BeanPropertyRowMapper<Answer_sheet>(Answer_sheet.class), stu_id,number);
         } catch (Exception e) {
             e.printStackTrace();

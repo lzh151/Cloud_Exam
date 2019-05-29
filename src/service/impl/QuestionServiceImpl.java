@@ -21,6 +21,11 @@ public class QuestionServiceImpl implements QuestionService {
     }
 
     @Override
+    public List<Question> FindAllQuestion() {
+        return dao.FindAllQuestion();
+    }
+
+    @Override
     public void DeleteQuestion(Question question) {
         dao.DeleteQuestion(question);
     }

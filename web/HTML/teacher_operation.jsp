@@ -104,8 +104,10 @@
                 <!--选项-->
                 <ul class="nav navbar-nav">
                     <li><a href="../index.jsp">首页</a></li>
-                    <li><a href="#">手动组卷</a></li>
-                    <li><a href="#">智能组卷</a></li>
+                    <li><a href="#searchTrigger">个人提交试题集</a></li>
+                    <li><a href="#studentList">学生列表</a></li>
+                    <li><a href="#organizeExam">组卷系统</a></li>
+                    <li><a href="#examSchedule">答题进度</a></li>
                 </ul>
 
                 <!--搜索栏-->

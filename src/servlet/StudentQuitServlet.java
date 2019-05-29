@@ -24,7 +24,7 @@ public class StudentQuitServlet extends HttpServlet {
         StateService stateService = new StateServiceImpl();
 
         stateService.DeleteStudentState(state);
-        response.sendRedirect(request.getContextPath() + "/index.html");
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

@@ -148,7 +148,7 @@
                 <div class="col-md-3 login_right">
                     <p>已有账号？<a href="./teacher_login.jsp">立即登录</a></p>
                     <p>学生<a href="./student_register.jsp">注册？</a></p>
-                    <p>返回<a href="${pageContext.request.contextPath}/index.jsp">首页</a></p>
+                    <p>返回<a href="${pageContext.request.contextPath}/HTML/index.jsp">首页</a></p>
                 </div>
             </div>
         </div>

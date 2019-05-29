@@ -1,4 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
+
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -35,11 +38,13 @@
             background: #f9f9f9;
             text-align: center;
         }
+        td{
+            width: 10%;
+        }
     </style>
 </head>
 
 <body>
-
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
@@ -58,9 +63,9 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <!--选项-->
                             <ul class="nav navbar-nav">
-                                <li><a href="#">首页</a></li>
-                                <li><a href="#">手动组卷</a></li>
-                                <li><a href="#">智能组卷</a></li>
+<%--                                <li><a href="#">首页</a></li>--%>
+<%--                                <li><a href="#">手动组卷</a></li>--%>
+<%--                                <li><a href="#">智能组卷</a></li>--%>
 <!--                                &lt;!&ndash;下拉列表&ndash;&gt;-->
 <!--                                <li class="dropdown">-->
 <!--                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">单元 <span class="caret"></span></a>-->
@@ -135,6 +140,46 @@
         </div>
     </div>
 
+    <div class="container-fluid" style="margin-top: 10px">
+        <div style="font-size: 20px; float: left;" id="QuestionSet">试题集</div>
+        <form class="form-inline"  id="QuestionForm" >
+            <div id="QuestionDiv">
+                <table class="table table-hover" style="margin-top: 50px;">
+                    <thead class="font_size" style="align-content: center">
+                    <td>单元</td>
+                    <td>题号</td>
+                    <td>类型</td>
+                    <td>问题描述</td>
+                    <td>选项A</td>
+                    <td>选项B</td>
+                    <td>选项C</td>
+                    <td>选项D</td>
+                    <td>教师编号</td>
+                    </thead>
+                    <tbody style="align-content: center" id="QuestionTable">
+                    <tr>
+                        <c:forEach items="${questionList}" var="questions" varStatus="status">
+                        <td>${questions.chapter}</td>
+                        <td>${questions.que_id}</td>
+                        <td>${questions.type}</td>
+                        <td>
+                            <p>${questions.que_describe}</p>
+                            <object data="${questions.file_path}" style="height: 80px" alt=""></object>
+                        </td>
+                        <td>${questions.answer_A}</td>
+                        <td>${questions.answer_B}</td>
+                        <td>${questions.answer_C}</td>
+                        <td>${questions.answer_D}</td>
+                        <td>${questions.teacher_id}</td>
+                    </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+    <hr>
+
     <footer class="container-fluid">
         <div class="container-fluid">
             <!--版权声明-->
@@ -144,6 +189,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
+

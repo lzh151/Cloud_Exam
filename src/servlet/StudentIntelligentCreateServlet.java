@@ -34,7 +34,9 @@ public class StudentIntelligentCreateServlet extends HttpServlet {
 
         Answer_sheetService service = new Answer_sheetServiceImpl();
         List<Answer_sheet> answer_sheets = service.FindAllByStuId(student_id,number);
-
+        if (number > answer_sheets.size()){
+            number = answer_sheets.size();
+        }
         for (int i = 0; i < number; i++){
             Answer_sheet answer = new Answer_sheet();
             answer.setStu_id(student_id);

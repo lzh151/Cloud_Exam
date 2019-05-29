@@ -9,6 +9,8 @@ public interface QuestionService {
 
     List<Question> FindAllQuestionByTeacherId(int id);
 
+    List<Question> FindAllQuestion();
+
     void DeleteQuestion(Question question);
 
     Question SearchCorrectAnswer(int chapter,int que_id,int teacher_id);
