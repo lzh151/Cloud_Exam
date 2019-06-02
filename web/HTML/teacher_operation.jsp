@@ -166,7 +166,7 @@
                     <td class="td_left"><label for="que_describe">问题描述:</label></td>
                     <td class="td_right"><input type="text" class="form-control" name="que_describe" id="que_describe" value="${que_describe}"></td>
                     <td><input type="checkbox" id="fileCheckBox" hidden="hidden" checked="checked" name="fileCheckBox" value="unchecked"></td>
-                    <td><a class="btn btn-default" href="javascript:record()" style="margin-left: 20px" id="record" name="record">语音录入</a></td>
+                    <td><a class="btn btn-default" style="margin-left: 20px" id="record">语音录入</a></td>
                     <td class="td_left"><button class="btn btn-default" type="button" id="fileLabel">添加附件</button></td>
                     <td class="td_right"><input type="file" class="form-control" name="file_path" id="file_path"></td>
                 </tr>
@@ -211,10 +211,30 @@
 
 <!--选择题判断-->
 <script>
-    document.getElementById("record").onclick = function () {
-        alert("点击确认开始录制(最长5秒)");
-        setTimeout(function(){alert("录制完毕!")},5000);
+    var count = 10;
+    var element = document.getElementById("record");
+    function time(){
+        var interval = setInterval(
+            function () {
+                if (count !== 0){
+                    element.innerText = (count).toString();
+                    count--;
+                }
+                else{
+                    clearInterval(interval);
+                    count = 10;
+                    element.innerText = "语音录入";
+                }
+            }, 1000);
     }
+
+    document.getElementById("record").onclick = function () {
+        if(confirm("点击确认开始录制(10秒)")){
+            document.getElementById("que_describe").value = "";
+            record();
+            time();
+        }
+    };
 
     $(document).ready(function(){
         $("#fileLabel").click(function(){

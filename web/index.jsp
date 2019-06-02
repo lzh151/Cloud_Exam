@@ -115,16 +115,20 @@
                 <!-- 图片 -->
                 <div class="carousel-inner  picture" role="listbox">
                     <div class="item active">
-                        <img src="IMG/DSC_4225.jpg" alt="">
+                        <img src="IMG/back1.jpg" alt="">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="IMG/DSC_4228.jpg" alt="">
+                        <img src="IMG/back2.jpg" alt="">
                         <div class="carousel-caption">
                         </div>
                     </div>
-                    ...
+                    <div class="item">
+                        <img src="IMG/back3.jpg" alt="">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 控制按钮 -->

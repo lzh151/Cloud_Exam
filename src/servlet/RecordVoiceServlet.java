@@ -37,7 +37,7 @@ public class RecordVoiceServlet extends HttpServlet {
         capture();
 
         try {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
         } catch (InterruptedException e){
             e.printStackTrace();
         }
@@ -46,14 +46,16 @@ public class RecordVoiceServlet extends HttpServlet {
 
         save();
 
-        //System.out.println("save out!");
         String text =  SpeechToText.SpeechToVoice(contextPath + "/File/test.pcm");
-
-        int begin = text.indexOf("\"result\": [\"");
-        int end = text.indexOf("。\"]");
-//        System.out.println(begin);
-//        System.out.println(end);
-        text = text.substring(begin + 12,end);
+        //System.out.println(text);
+        if (text.contains("result")){
+            int begin = text.indexOf("\"result\": [\"");
+            int end = text.indexOf("。\"]");
+            text = text.substring(begin + 12,end);
+        }
+        else {
+            text = "声音质量差,请重新录制";
+        }
 
         request.setCharacterEncoding("utf-8");
         HttpSession session = request.getSession();

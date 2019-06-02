@@ -77,6 +77,15 @@
             text-align: center;
         }
     </style>
+    <script>
+        window.onload = function () {
+             var img = document.getElementById("codeImg");
+             img.onclick = function () {
+                 var date = new Date().getTime();
+                 img.src = "${pageContext.request.contextPath}/checkCodeServlet?" + date;
+             }
+        }
+    </script>
 </head>
 
 <body>
@@ -135,6 +144,11 @@
                                 </td>
                             </tr>
 
+                            <tr>
+                                <td class="td_left"><label for="code">验证码:</label></td>
+                                <td class="td_right"><input type="text" class="form-control" name="code" id="code" style="width: 60%;float: left;"> <img src = "${pageContext.request.contextPath}/checkCodeServlet" class="img-rounded" alt="" style="width: 30%;float: right" id="codeImg"> </td>
+                            </tr>
+
                             <tr align="center">
                                 <td colspan="2"><button class="btn btn-default" style="margin-top: 30px" type="submit">注册</button>
                             </tr>
@@ -148,7 +162,7 @@
                 <div class="col-md-3 login_right">
                     <p>已有账号？<a href="./teacher_login.jsp">立即登录</a></p>
                     <p>学生<a href="./student_register.jsp">注册？</a></p>
-                    <p>返回<a href="${pageContext.request.contextPath}/HTML/index.jsp">首页</a></p>
+                    <p>返回<a href="${pageContext.request.contextPath}/index.jsp">首页</a></p>
                 </div>
             </div>
         </div>

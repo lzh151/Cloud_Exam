@@ -120,7 +120,7 @@
                 <div class="col-md-3 login_right">
                     <p>未注册？<a href="${pageContext.request.contextPath}/HTML/teacher_register.jsp">立即注册</a></p>
                     <p>学生<a href="${pageContext.request.contextPath}/HTML/student_login.jsp">登录？</a></p>
-                    <p>返回<a href="${pageContext.request.contextPath}/HTML/index.jsp">首页</a></p>
+                    <p>返回<a href="${pageContext.request.contextPath}/index.jsp">首页</a></p>
                 </div>
 
 
