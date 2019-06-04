@@ -28,13 +28,34 @@
         }
 
         function addAnswer(exam_name,stu_id,chapter,que_id,index) {
-            var Element = document.getElementsByName("Text")[index - 1];
-            if (Element.value != null) {
-                var text = Element.value;
+            var Text = document.getElementsByName("Text")[index];
+            //var selectQuestion = document.getElementsByName("selectQuestion")[(index) * 4 - 1].value;
+            var option = "";
+            for(var i = 0; i <= 3; i++){
+                if(document.getElementsByName("selectQuestion")[(index) * 4 + i].checked){
+                    switch (i) {
+                        case 0:option = "A";break;
+                        case 1:option = "B";break;
+                        case 2:option = "C";break;
+                        case 3:option = "D";break;
+                    }
+                }
+            }
+            var judge = "";
+            for(i = 0; i <= 1; i++){
+                if(document.getElementsByName("judgeQuestion")[(index) * 2 + i].checked){
+                    switch (i) {
+                        case 0:judge = "正确";break;
+                        case 1:judge = "错误";break;
+                    }
+                }
+            }
+            if (Text.value != null || option !== "" || judge !== "") {
+                var text = Text.value + option + judge;
                 location.href="${pageContext.request.contextPath}/addStudentAnswerServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&chapter=" + chapter + "&que_id=" + que_id + "&text=" + text + "&stu_name=${name}";
             }
             else{
-                confirm("请输入数据!");
+                confirm("请作答!");
             }
         }
     </script>
@@ -118,10 +139,6 @@
                 <td>题号</td>
                 <td>类型</td>
                 <td>问题描述</td>
-                <td>选项A</td>
-                <td>选项B</td>
-                <td>选项C</td>
-                <td>选项D</td>
                 <td>批改记录</td>
                 <td>作答答案</td>
                 <td>作答</td>
@@ -132,20 +149,45 @@
                     <td>${questions.exam_name}</td>
                     <td>${questions.chapter}</td>
                     <td>${questions.que_id}</td>
-                    <td>${questions.type}</td>
+                    <td name="type">${questions.type}</td>
                     <td>
                         <p>${questions.que_describe}</p>
                         <object data="${questions.file_path}" style="height: 80px" alt=""></object>
                     </td>
-                    <td>${questions.answer_A}</td>
-                    <td>${questions.answer_B}</td>
-                    <td>${questions.answer_C}</td>
-                    <td>${questions.answer_D}</td>
                     <td>${questions.remark}</td>
                     <td>${questions.answer}</td>
-                    <td><label>
-                        <input type="text" name="Text">
-                    </label><a class="btn btn-default" href="javascript:addAnswer(&quot ${questions.exam_name}&quot,${questions.stu_id},${questions.chapter},${questions.que_id},${status.count});">提交</a></td>
+
+                    <td>
+                        <form action="${pageContext.request.contextPath}/addStudentAnswerServlet">
+                        <div name="answer_select"><input type="radio" name="selectQuestion" id="selectQuestion" style="margin-left: 12px;" value="A"> A. ${questions.answer_A}<br>
+                        <input type="radio" name="selectQuestion" style="margin-left: 12px;" value="B"> B. ${questions.answer_B}<br>
+                        <input type="radio" name="selectQuestion" style="margin-left: 12px;" value="C"> C. ${questions.answer_C}<br>
+                        <input type="radio" name="selectQuestion" style="margin-left: 12px;" value="D"> D. ${questions.answer_D}<br>
+                        </div>
+                        <div name="answer_judge"><input type="radio" name="judgeQuestion" id="judgeQuestion" style="margin-left: 12px;" value="正确"> 正确 <br>
+                            <input type="radio" name="judgeQuestion" style="margin-left: 12px;" value="错误"> 错误 <br>
+                        </div>
+                        <div name="answer_text"><input type="text" name="Text" id="Text" placeholder="请勿填写特殊字符"></div>
+                        <a class="btn btn-default" type="submit" href="javascript:addAnswer(&quot ${questions.exam_name}&quot,${questions.stu_id},${questions.chapter},${questions.que_id},${status.index});">提交</a>
+                        </form>
+                    </td>
+                    <script>
+                        if(document.getElementsByName("type")[${status.index}].textContent === "选择题"){
+                            document.getElementsByName("answer_text")[${status.index}].style.display = "none";
+                            document.getElementsByName("answer_judge")[${status.index}].style.display = "none";
+                            document.getElementsByName("answer_select")[${status.index}].style.display = "";
+                        }
+                        else if(document.getElementsByName("type")[${status.index}].textContent === "判断题"){
+                            document.getElementsByName("answer_text")[${status.index}].style.display = "none";
+                            document.getElementsByName("answer_judge")[${status.index}].style.display = "";
+                            document.getElementsByName("answer_select")[${status.index}].style.display = "none";
+                        }
+                        else{
+                            document.getElementsByName("answer_text")[${status.index}].style.display = "";
+                            document.getElementsByName("answer_judge")[${status.index}].style.display = "none";
+                            document.getElementsByName("answer_select")[${status.index}].style.display = "none";
+                        }
+                    </script>
                 </tr>
                     </c:forEach>
                 </tbody>

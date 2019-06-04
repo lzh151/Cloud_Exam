@@ -57,7 +57,7 @@ public class AddStudentAnswerServlet extends HttpServlet {
             service.AddBoolMark(false,answer_sheet);
         }
         else{
-            if(correctAnswer.getType().equals("选择题")){
+            if(correctAnswer.getType().equals("选择题") || correctAnswer.getType().equals("判断题")){
                 Answer_sheet answerSheet1 = new Answer_sheet();
                 answerSheet1.setExam_name(exam_name);
                 answerSheet1.setStu_id(Integer.parseInt(request.getParameter("stu_id")));

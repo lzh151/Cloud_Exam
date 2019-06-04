@@ -144,7 +144,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="margin-top: 10px">
+    <div class="container" style="margin-top: 10px">
         <div style="font-size: 20px; float: left;" id="QuestionSet">试题集</div>
         <form class="form-inline"  id="QuestionForm" >
             <div id="QuestionDiv">
@@ -154,10 +154,6 @@
                     <td>题号</td>
                     <td>类型</td>
                     <td>问题描述</td>
-                    <td>选项A</td>
-                    <td>选项B</td>
-                    <td>选项C</td>
-                    <td>选项D</td>
                     <td>教师编号</td>
                     </thead>
                     <tbody style="align-content: center" id="QuestionTable">
@@ -170,10 +166,6 @@
                             <p>${questions.que_describe}</p>
                             <object data="${questions.file_path}" style="height: 80px" alt=""></object>
                         </td>
-                        <td>${questions.answer_A}</td>
-                        <td>${questions.answer_B}</td>
-                        <td>${questions.answer_C}</td>
-                        <td>${questions.answer_D}</td>
                         <td>${questions.teacher_id}</td>
                     </tr>
                     </c:forEach>

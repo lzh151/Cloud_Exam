@@ -64,8 +64,14 @@ public class AddQuestionServlet extends HttpServlet {
             question.setAnswer_D(null);
         }
 
-        QuestionService service = new QuestionServiceImpl();
-        service.AddQuestion(question);
+        try {
+            QuestionService service = new QuestionServiceImpl();
+            service.AddQuestion(question);
+        }
+        catch (Exception e){
+            request.setAttribute("add_msg","试题题号冲突,请重新添加");
+            request.getRequestDispatcher("/HTML/teacher_operation.jsp").forward(request,response);
+        }
 
         QuestionService questionService = new QuestionServiceImpl();
 

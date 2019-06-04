@@ -58,9 +58,15 @@ public class ViewExamServlet extends HttpServlet {
             question_answers.add(question_answer);
         }
 
+//        for (Question_Answer question_answer : question_answers) {
+//            if (question_answer.getType().equals("选择题")) {
+//                String que_describe = question_answer.getQue_describe();
+//                que_describe = que_describe + "</br>A." + question_answer.getAnswer_A() + "</br>B." + question_answer.getAnswer_B() + "</br>C." + question_answer.getAnswer_C() + "</br>D." + question_answer.getAnswer_D();
+//                question_answer.setQue_describe(que_describe);
+//            }
+//        }
+
         HttpSession session = request.getSession();
-//        session.setAttribute("examAllList",answer_sheets);
-//        session.setAttribute("questionsList",questions);
         session.setAttribute("questionsList",question_answers);
         response.sendRedirect(request.getContextPath() + "/HTML/student_paper.jsp");
     }

@@ -21,6 +21,14 @@ public class ShowAllQuestionServlet extends HttpServlet {
         QuestionService service = new QuestionServiceImpl();
         List<Question> questions = service.FindAllQuestion();
 
+        for (Question question : questions) {
+            if (question.getType().equals("选择题")) {
+                String que_describe = question.getQue_describe();
+                que_describe = que_describe + "</br>A." + question.getAnswer_A() + "</br>B." + question.getAnswer_B() + "</br>C." + question.getAnswer_C() + "</br>D." + question.getAnswer_D();
+                question.setQue_describe(que_describe);
+            }
+        }
+
         HttpSession session = request.getSession();
         session.setAttribute("questionList",questions);
         response.sendRedirect(request.getContextPath() + "index.jsp");

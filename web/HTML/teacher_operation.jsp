@@ -62,7 +62,22 @@
             }
             location.href="${pageContext.request.contextPath}/selectQuestionServlet?chapter=" + chapter + "&type=" + type + "&teacher_id=" + ${teacher.id};
         }
+    </script>
 
+
+    <script>
+        function submit() {
+            var chapter = document.getElementById("chapter");
+            chapter = chapter.value;
+            var que_id = document.getElementById("que_id");
+            que_id = que_id.value;
+            if(chapter <= 0 || que_id <= 0){
+                alert("请输入完整试题数据!");
+            }
+            else{
+                document.getElementById("teacher_addQuestion").submit();
+            }
+        }
     </script>
 
     <link href="../css/form_self.css" rel="stylesheet">
@@ -138,7 +153,7 @@
 <div class="container" style="margin-top: 10px" >
     <div style="font-size: 20px;" id="addTrigger">添加试题</div>
     <div id="addQuestion" align="center">
-        <form action="${pageContext.request.contextPath}/addQuestionServlet" method="post" enctype="multipart/form-data">
+        <form action="${pageContext.request.contextPath}/addQuestionServlet" method="post" enctype="multipart/form-data" id="teacher_addQuestion">
             <table>
                 <tr>
                     <td class="td_left"><label for="chapter">单元:</label></td>
@@ -153,12 +168,9 @@
                 <tr>
                     <td class="td_left"><label>类型:</label></td>
                     <td class="td_right">
-                        <label>
-                            <input type="radio" name="type" value="选择题" checked="checked">
-                        </label> 选择题
-                        <label>
-                            <input type="radio" name="type" value="非选题">
-                        </label> 非选题
+                        <label><input type="radio" name="type" value="选择题" checked="checked">选择题</label>
+                        <label><input type="radio" name="type" value="非选题">非选题</label>
+                        <label><input type="radio" name="type" value="判断题">判断题</label>
                     </td>
                 </tr>
 
@@ -197,13 +209,15 @@
                 </tr>
 
                 <tr>
-                    <td class="td_left"><label for="teacher_id">教师编号:</label></td>
-                    <td class="td_right"><input type="text" class="form-control" name="teacher_id" id="teacher_id" value="${teacher.id}" readonly="readonly"></td>
+                    <td class="td_right"><input type="hidden" class="form-control" name="teacher_id" id="teacher_id" value="${teacher.id}" readonly="readonly"></td>
                 </tr>
 
                 <tr align="center">
-                    <td colspan="2"><button class="btn btn-default" style="margin-top: 30px" type="submit">添加</button>
+                    <td colspan="2"><a class="btn btn-default" style="margin-top: 30px" href="javascript:submit()" id="add">添加</a>
                 </tr>
+                <div class="alter alert-warning alert-dismissible" role="alert">
+                    <strong>${add_msg}</strong>
+                </div>
             </table>
         </form>
     </div>
@@ -279,6 +293,12 @@
         document.getElementById("form_answer_C").style.display = "none";
         document.getElementById("form_answer_D").style.display = "none";
     }
+    elementsByNameElement[2].onclick = function () {
+        document.getElementById("form_answer_A").style.display = "none";
+        document.getElementById("form_answer_B").style.display = "none";
+        document.getElementById("form_answer_C").style.display = "none";
+        document.getElementById("form_answer_D").style.display = "none";
+    }
 </script>
 
 <hr>
@@ -309,10 +329,6 @@
                 <td>题号</td>
                 <td>类型</td>
                 <td>问题描述</td>
-                <td>选项A</td>
-                <td>选项B</td>
-                <td>选项C</td>
-                <td>选项D</td>
                 <td>正确答案</td>
                 <td>操作</td>
                 </thead>
@@ -329,12 +345,9 @@
                                 <p>${questions.que_describe}</p>
                                 <object data="${questions.file_path}" style="height: 80px" alt=""></object>
                             </td>
-                            <td>${questions.answer_A}</td>
-                            <td>${questions.answer_B}</td>
-                            <td>${questions.answer_C}</td>
-                            <td>${questions.answer_D}</td>
                             <td>${questions.correct_answer}</td>
-                            <td><a class="btn btn-default btn-sm" href="#">修改</a> <a class="btn btn-default btn-sm" href="javascript:deleteQuestion(${questions.chapter},${questions.que_id},${questions.teacher_id});">删除</a></td>
+                            <td> <a class="btn btn-default btn-sm" href="javascript:deleteQuestion(${questions.chapter},${questions.que_id},${questions.teacher_id});">删除</a></td>
+<%--                            <a class="btn btn-default btn-sm" href="#">修改</a>--%>
                         </tr>
                     </c:forEach>
                 </tbody>

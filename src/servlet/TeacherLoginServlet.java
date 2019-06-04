@@ -43,6 +43,14 @@ public class TeacherLoginServlet extends HttpServlet {
                 QuestionService questionService = new QuestionServiceImpl();
                 List<Question> questions = questionService.FindAllQuestionByTeacherId(loginTeacher.getId());
 
+                for (Question question : questions) {
+                    if (question.getType().equals("选择题")) {
+                        String que_describe = question.getQue_describe();
+                        que_describe = que_describe + "</br>A." + question.getAnswer_A() + "</br>B." + question.getAnswer_B() + "</br>C." + question.getAnswer_C() + "</br>D." + question.getAnswer_D();
+                        question.setQue_describe(que_describe);
+                    }
+                }
+
                 StudentService studentService = new StudentServiceImpl();
                 List<Student> students = studentService.findByTeacherId(loginTeacher.getId());
 

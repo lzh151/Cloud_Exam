@@ -158,10 +158,6 @@
                 <td>题号</td>
                 <td>类型</td>
                 <td>问题描述</td>
-                <td>选项A</td>
-                <td>选项B</td>
-                <td>选项C</td>
-                <td>选项D</td>
                 <td>批改记录</td>
                 <td>作答答案</td>
                 <td>作答</td>
@@ -177,10 +173,6 @@
                         <p>${mistakes.que_describe}</p>
                         <object data="${mistakes.file_path}" style="height: 80px" alt=""></object>
                     </td>
-                    <td>${mistakes.answer_A}</td>
-                    <td>${mistakes.answer_B}</td>
-                    <td>${mistakes.answer_C}</td>
-                    <td>${mistakes.answer_D}</td>
                     <td>${mistakes.remark}</td>
                     <td>${mistakes.answer}</td>
                     <td><label>

@@ -72,6 +72,14 @@ public class StudentLoginServlet extends HttpServlet {
                 mistakes.add(question_answer);
             }
 
+            for (Question_Answer mistake : mistakes) {
+                if (mistake.getType().equals("选择题")) {
+                    String que_describe = mistake.getQue_describe();
+                    que_describe = que_describe + "</br>A." + mistake.getAnswer_A() + "</br>B." + mistake.getAnswer_B() + "</br>C." + mistake.getAnswer_C() + "</br>D." + mistake.getAnswer_D();
+                    mistake.setQue_describe(que_describe);
+                }
+            }
+
             if(stateList != null){
                 stateService.AddStudentState(loginStudent);
 
