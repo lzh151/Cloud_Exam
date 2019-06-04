@@ -32,13 +32,33 @@
             location.href="${pageContext.request.contextPath}/viewExamServlet?exam_name=" + exam_name + "&stu_id=${id}";
         }
         function alterAnswer(exam_name,stu_id,chapter,que_id,index) {
-            var Element = document.getElementsByName("Text")[index - 1];
-            if (Element != null) {
-                var text = Element.value;
+            var Text = document.getElementsByName("Text")[index];
+            var option = "";
+            for(var i = 0; i <= 3; i++){
+                if(document.getElementsByName("selectQuestion")[(index) * 4 + i].checked){
+                    switch (i) {
+                        case 0:option = "A";break;
+                        case 1:option = "B";break;
+                        case 2:option = "C";break;
+                        case 3:option = "D";break;
+                    }
+                }
+            }
+            var judge = "";
+            for(i = 0; i <= 1; i++){
+                if(document.getElementsByName("judgeQuestion")[(index) * 2 + i].checked){
+                    switch (i) {
+                        case 0:judge = "正确";break;
+                        case 1:judge = "错误";break;
+                    }
+                }
+            }
+            if (Text.value != null || option !== "" || judge !== "") {
+                var text = Text.value + option + judge;
                 location.href="${pageContext.request.contextPath}/alterStudentAnswerServlet?exam_name=" + exam_name + "&stu_id=" + stu_id + "&chapter=" + chapter + "&que_id=" + que_id + "&text=" + text + "&stu_name=${name}";
             }
             else{
-                confirm("请输入数据!");
+                confirm("请作答!");
             }
         }
         function intelligentCreate() {
@@ -49,6 +69,7 @@
                 location.href="${pageContext.request.contextPath}/studentIntelligentCreateServlet?number=" + document.getElementById("number").value + "&student_id=${id}" + "&student_name=${name}";
             }
         }
+
     </script>
 
     <link href="../css/form_self.css" rel="stylesheet">
@@ -168,17 +189,42 @@
                     <td>${mistakes.exam_name}</td>
                     <td>${mistakes.chapter}</td>
                     <td>${mistakes.que_id}</td>
-                    <td>${mistakes.type}</td>
+                    <td name="type">${mistakes.type}</td>
                     <td>
                         <p>${mistakes.que_describe}</p>
                         <object data="${mistakes.file_path}" style="height: 80px" alt=""></object>
                     </td>
                     <td>${mistakes.remark}</td>
                     <td>${mistakes.answer}</td>
-                    <td><label>
-                        <input type="text" name="Text">
-                    </label><a class="btn btn-default" href="javascript:alterAnswer(&quot ${mistakes.exam_name}&quot,${mistakes.stu_id},${mistakes.chapter},${mistakes.que_id},${status.count});">提交</a></td>
+                    <td><div name="answer_select"><input type="radio" name="selectQuestion" id="selectQuestion" style="margin-left: 12px;" value="A"> A. ${mistakes.answer_A}<br>
+                            <input type="radio" name="selectQuestion" style="margin-left: 12px;" value="B"> B. ${mistakes.answer_B}<br>
+                            <input type="radio" name="selectQuestion" style="margin-left: 12px;" value="C"> C. ${mistakes.answer_C}<br>
+                            <input type="radio" name="selectQuestion" style="margin-left: 12px;" value="D"> D. ${mistakes.answer_D}<br>
+                        </div>
+                        <div name="answer_judge"><input type="radio" name="judgeQuestion" id="judgeQuestion" style="margin-left: 12px;" value="正确"> 正确 <br>
+                            <input type="radio" name="judgeQuestion" style="margin-left: 12px;" value="错误"> 错误 <br>
+                        </div>
+                        <div name="answer_text"><input type="text" name="Text" id="Text" placeholder="请勿填写特殊字符"></div>
+                        <a class="btn btn-default" type="submit" href="javascript:alterAnswer(&quot ${mistakes.exam_name}&quot,${mistakes.stu_id},${mistakes.chapter},${mistakes.que_id},${status.index});">提交</a>
+                    </td>
                 </tr>
+                <script>
+                    if(document.getElementsByName("type")[${status.index}].textContent === "选择题"){
+                        document.getElementsByName("answer_text")[${status.index}].style.display = "none";
+                        document.getElementsByName("answer_judge")[${status.index}].style.display = "none";
+                        document.getElementsByName("answer_select")[${status.index}].style.display = "";
+                    }
+                    else if(document.getElementsByName("type")[${status.index}].textContent === "判断题"){
+                        document.getElementsByName("answer_text")[${status.index}].style.display = "none";
+                        document.getElementsByName("answer_judge")[${status.index}].style.display = "";
+                        document.getElementsByName("answer_select")[${status.index}].style.display = "none";
+                    }
+                    else{
+                        document.getElementsByName("answer_text")[${status.index}].style.display = "";
+                        document.getElementsByName("answer_judge")[${status.index}].style.display = "none";
+                        document.getElementsByName("answer_select")[${status.index}].style.display = "none";
+                    }
+                </script>
                 </c:forEach>
                 </tbody>
             </table>

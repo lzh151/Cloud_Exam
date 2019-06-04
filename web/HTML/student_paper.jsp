@@ -29,7 +29,6 @@
 
         function addAnswer(exam_name,stu_id,chapter,que_id,index) {
             var Text = document.getElementsByName("Text")[index];
-            //var selectQuestion = document.getElementsByName("selectQuestion")[(index) * 4 - 1].value;
             var option = "";
             for(var i = 0; i <= 3; i++){
                 if(document.getElementsByName("selectQuestion")[(index) * 4 + i].checked){
