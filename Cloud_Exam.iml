@@ -40,5 +40,8 @@
     <orderEntry type="library" name="jquery.slim" level="application" />
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="aip-java-sdk-4.1.1" level="project" />
+    <orderEntry type="library" name="jquery-1.10.2" level="application" />
+    <orderEntry type="library" name="jxl-2.6.12" level="project" />
+    <orderEntry type="library" name="jxl" level="project" />
   </component>
 </module>

@@ -71,11 +71,20 @@
             chapter = chapter.value;
             var que_id = document.getElementById("que_id");
             que_id = que_id.value;
-            if(chapter <= 0 || que_id <= 0){
+            if(chapter === "" || que_id === ""){
                 alert("请输入完整试题数据!");
             }
             else{
                 document.getElementById("teacher_addQuestion").submit();
+            }
+        }
+        function addExcel() {
+            var element = document.getElementById("excel_path");
+            if(element.value !== ""){
+                document.getElementById("addExcelForm").submit();
+            }
+            else{
+                alert("请上传Excel文件");
             }
         }
     </script>
@@ -118,7 +127,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="../index.jsp">首页</a></li>
                     <li><a href="#searchTrigger">个人提交试题集</a></li>
                     <li><a href="#studentList">学生列表</a></li>
                     <li><a href="#organizeExam">组卷系统</a></li>
@@ -221,6 +229,14 @@
             </table>
         </form>
     </div>
+    <br>
+    <form action="${pageContext.request.contextPath}/addExcelItemServlet" method="post" enctype="multipart/form-data" style="margin-top: 5px; float: right;" class="form-inline" id="addExcelForm">
+        <div class="form-group">
+            <label for="que_chapter">快捷导入Excel(.xls)文件:</label>
+            <input type="file" class="form-control" id="excel_path" name="excel_path">
+            <a class="btn btn-default" style="margin-left: 10px" href="javascript:addExcel()" id="addExcel">提交</a>
+        </div>
+    </form>
 </div>
 
 <!--选择题判断-->
@@ -531,6 +547,42 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript">
+    //~ heart
+    !function(c,d,g){
+        function f()
+        {
+            for(var a=0;a<b.length;a++)
+                0>=b[a].alpha?(d.body.removeChild(b[a].el),b.splice(a,1)):(b[a].y--,b[a].scale+=.004,b[a].alpha-=.013,b[a].el.style.cssText="left:"+b[a].x+"px;top:"+b[a].y+"px;opacity:"+b[a].alpha+";transform:scale("+b[a].scale+","+b[a].scale+") rotate(45deg);background:"+b[a].color+";z-index:99999");
+            requestAnimationFrame(f)
+        }
+        var b=[];
+        c.requestAnimationFrame=c.requestAnimationFrame||c.webkitRequestAnimationFrame||c.mozRequestAnimationFrame||c.oRequestAnimationFrame|| c.msRequestAnimationFrame||function(a){setTimeout(a,1E3/60)};
+        (function(a)
+        {
+            var b=d.createElement("style");b.type="text/css";
+            try{
+                b.appendChild(d.createTextNode(a))
+            }
+            catch(e)
+            {
+                b.styleSheet.cssText=a
+            }
+            d.getElementsByTagName("head")[0].appendChild(b)
+        })(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+        (function()
+        {
+            var a="function"==typeof c.onclick&&c.onclick;c.onclick = function(c)
+        {
+            a&&a();
+            var e=d.createElement("div");
+            e.className="heart";
+            b.push({el:e,x:c.clientX-5,y:c.clientY-5,scale:1,alpha:1,color:"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"});
+            d.body.appendChild(e)}
+        })();f()
+    }(window,document);
+</script>
 
+<script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="../js/ribbon.js"></script>
 </body>
 </html>

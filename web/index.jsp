@@ -1,3 +1,4 @@
+<%--suppress ALL --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -144,7 +145,7 @@
         </div>
     </div>
 
-    <div class="container" style="margin-top: 10px">
+    <div class="container" style="margin-top: 10px;">
         <div style="font-size: 20px; float: left;" id="QuestionSet">试题集</div>
         <form class="form-inline"  id="QuestionForm" >
             <div id="QuestionDiv">
@@ -154,7 +155,7 @@
                     <td>题号</td>
                     <td>类型</td>
                     <td>问题描述</td>
-                    <td>教师编号</td>
+<%--                    <td>教师编号</td>--%>
                     </thead>
                     <tbody style="align-content: center" id="QuestionTable">
                     <tr>
@@ -166,7 +167,7 @@
                             <p>${questions.que_describe}</p>
                             <object data="${questions.file_path}" style="height: 80px" alt=""></object>
                         </td>
-                        <td>${questions.teacher_id}</td>
+<%--                        <td>${questions.teacher_id}</td>--%>
                     </tr>
                     </c:forEach>
                     </tbody>
@@ -185,6 +186,44 @@
             </div>
         </div>
     </footer>
+
+    <script type="text/javascript">
+        //~ heart
+        !function(c,d,g){
+            function f()
+            {
+                for(var a=0;a<b.length;a++)
+                    0>=b[a].alpha?(d.body.removeChild(b[a].el),b.splice(a,1)):(b[a].y--,b[a].scale+=.004,b[a].alpha-=.013,b[a].el.style.cssText="left:"+b[a].x+"px;top:"+b[a].y+"px;opacity:"+b[a].alpha+";transform:scale("+b[a].scale+","+b[a].scale+") rotate(45deg);background:"+b[a].color+";z-index:99999");
+                requestAnimationFrame(f)
+            }
+            var b=[];
+            c.requestAnimationFrame=c.requestAnimationFrame||c.webkitRequestAnimationFrame||c.mozRequestAnimationFrame||c.oRequestAnimationFrame|| c.msRequestAnimationFrame||function(a){setTimeout(a,1E3/60)};
+            (function(a)
+            {
+                var b=d.createElement("style");b.type="text/css";
+                try{
+                    b.appendChild(d.createTextNode(a))
+                }
+                catch(e)
+                {
+                    b.styleSheet.cssText=a
+                }
+                d.getElementsByTagName("head")[0].appendChild(b)
+            })(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+            (function()
+            {
+                var a="function"==typeof c.onclick&&c.onclick;c.onclick = function(c)
+            {
+                a&&a();
+                var e=d.createElement("div");
+                e.className="heart";
+                b.push({el:e,x:c.clientX-5,y:c.clientY-5,scale:1,alpha:1,color:"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"});
+                d.body.appendChild(e)}
+            })();f()
+        }(window,document);
+    </script>
+
+    <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="js/ribbon.js"></script>
 </body>
 </html>
 
