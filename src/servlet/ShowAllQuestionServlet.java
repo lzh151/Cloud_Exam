@@ -15,8 +15,8 @@ import java.util.List;
 public class ShowAllQuestionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-        Cookie[] cookies = request.getCookies();
-        System.out.println(cookies[0].getValue());
+//        Cookie[] cookies = request.getCookies();
+//        System.out.println(cookies[0].getValue());
         //cookies[0].setValue("1");
         QuestionService service = new QuestionServiceImpl();
         List<Question> questions = service.FindAllQuestion();

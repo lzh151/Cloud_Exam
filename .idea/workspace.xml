@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_operation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_paper.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_paper.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/ShowAllQuestionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/ShowAllQuestionServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -135,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/ShowAllQuestionServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddQuestionServlet.java" />
@@ -143,6 +140,7 @@
         <option value="$PROJECT_DIR$/web/HTML/student_paper.jsp" />
         <option value="$PROJECT_DIR$/web/HTML/student_operation.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/ShowAllQuestionServlet.java" />
       </list>
     </option>
   </component>
@@ -164,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -176,7 +175,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,6 +430,8 @@
       <workItem from="1559631917065" duration="10000" />
       <workItem from="1559634528934" duration="11367000" />
       <workItem from="1559646471438" duration="548000" />
+      <workItem from="1559647044806" duration="39000" />
+      <workItem from="1559724775431" duration="1307000" />
     </task>
     <task id="LOCAL-00001" summary="Update attribute and fix such error">
       <created>1556283184115</created>
@@ -531,11 +531,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559646031379</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fix answer function and change question display method">
+      <created>1559647059390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559647059390</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222430000" />
+    <option name="totallyTimeSpent" value="223776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,17 +556,17 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6435986" visible="true" weight="0.25612745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6401384" visible="true" weight="0.26409313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.35640138" side_tool="true" visible="true" weight="0.25612745" />
+      <window_info id="Web" order="7" sideWeight="0.35986158" side_tool="true" visible="true" weight="0.26409313" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48161766" weight="0.33563218" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4810049" visible="true" weight="0.33563218" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497558" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -567,7 +574,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4993895" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5183824" side_tool="true" visible="true" weight="0.33563218" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5189951" side_tool="true" visible="true" weight="0.33563218" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.48107448" weight="0.3275862" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -898,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/ShowAllQuestionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -951,6 +951,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="172" column="28" lean-forward="true" selection-start-line="172" selection-start-column="28" selection-end-line="172" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/ShowAllQuestionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
