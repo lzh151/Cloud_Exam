@@ -7,31 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jxl.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jxl_2_6_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlet/AddExcelItemServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/libs/jxl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/js/ribbon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/normanlee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/normanlee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cloud_Exam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Cloud_Exam.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/student_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/HTML/teacher_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_operation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_paper.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_paper.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/student_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/student_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,17 +32,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="javaproject@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="javaproject@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="javaproject@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="javaproject: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -74,7 +39,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/servlet/AddExcelItemServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="47" column="151" lean-forward="true" selection-start-line="47" selection-start-column="151" selection-end-line="47" selection-end-column="151" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -189,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,15 +174,11 @@
               <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -217,7 +190,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -464,7 +437,8 @@
       <workItem from="1559646471438" duration="548000" />
       <workItem from="1559647044806" duration="39000" />
       <workItem from="1559724775431" duration="1350000" />
-      <workItem from="1559733016485" duration="17210000" />
+      <workItem from="1559733016485" duration="17308000" />
+      <workItem from="1559800451311" duration="1328000" />
     </task>
     <task id="LOCAL-00001" summary="Update attribute and fix such error">
       <created>1556283184115</created>
@@ -578,11 +552,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559730960932</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add function that through excel file to add question">
+      <created>1559752056155</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1559752056155</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241029000" />
+    <option name="totallyTimeSpent" value="242455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,18 +577,17 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.63833076" visible="true" weight="0.26838234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6366782" visible="true" weight="0.27267158" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.36166924" side_tool="true" visible="true" weight="0.26838234" />
-      <window_info anchor="bottom" id="Inspection Results" sideWeight="0.49938726" weight="0.32988507" />
+      <window_info id="Web" order="7" sideWeight="0.3633218" side_tool="true" visible="true" weight="0.27267158" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47732842" weight="0.33563218" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47671568" visible="true" weight="0.33563218" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497558" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,20 +595,21 @@
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4993895" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5061275" side_tool="true" visible="true" weight="0.25632185" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5232843" side_tool="true" visible="true" weight="0.33563218" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.47120097" weight="0.3275862" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49387255" visible="true" weight="0.25632185" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.49325982" weight="0.25632185" />
       <window_info anchor="bottom" id="Spring" order="15" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Console" order="16" sideWeight="0.498779" weight="0.32959184" />
+      <window_info anchor="bottom" id="Inspection Results" order="17" sideWeight="0.49938726" weight="0.32988507" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32967034" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32965687" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="aiXcoder" order="9" side_tool="true" weight="0.32965687" />
@@ -649,12 +630,10 @@
     <MESSAGE value="Accomplished" />
     <MESSAGE value="Add checkCode function to register module" />
     <MESSAGE value="Fix answer function and change question display method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix answer function and change question display method" />
+    <MESSAGE value="Add function that through excel file to add question" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add function that through excel file to add question" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/IMG/back1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/IMG/DSC_4180.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -782,53 +761,17 @@
     <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/anime.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/dat.gui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/jquery.1.12.4.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/crowd.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/anime.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/dat.gui.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.1.12.4.min.js" />
+    <entry file="file://$PROJECT_DIR$/web/css/crowd.css" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_www.jq22.com_jquery_jquery-1.10.2.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/constellation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55509">
-          <folding>
-            <element signature="e#56#63#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/constellation.js" />
+    <entry file="file://$PROJECT_DIR$/web/index.html" />
     <entry file="file://$PROJECT_DIR$/web/HTML/student_login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -836,13 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/ribbon.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/ribbon.min.js" />
     <entry file="file://$PROJECT_DIR$/web/HTML/teacher_register.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-294">
@@ -878,9 +815,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/AddExcelItem.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/AddExcelItem.java" />
     <entry file="file://$PROJECT_DIR$/src/servlet/AddJudgeTextServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -979,10 +914,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javaproject.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4310" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddExcelItemServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="57" column="17" lean-forward="true" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
+        <state relative-caret-position="675">
+          <caret line="47" column="151" lean-forward="true" selection-start-line="47" selection-start-column="151" selection-end-line="47" selection-end-column="151" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
