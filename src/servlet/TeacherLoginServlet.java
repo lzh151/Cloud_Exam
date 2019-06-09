@@ -62,6 +62,7 @@ public class TeacherLoginServlet extends HttpServlet {
                 session.setAttribute("question",questions);
                 session.setAttribute("student",students);
                 session.setAttribute("Schedule",answer_sheets);
+
                 response.sendRedirect(request.getContextPath() + "/HTML/teacher_operation.jsp");
             }
             else{

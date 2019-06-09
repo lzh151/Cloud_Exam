@@ -581,6 +581,10 @@
             d.body.appendChild(e)}
         })();f()
     }(window,document);
+
+    window.onload = function () {
+        document.getElementById("que_describe").value = "";
+    }
 </script>
 
 <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="../js/ribbon.js"></script>

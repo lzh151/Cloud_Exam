@@ -89,8 +89,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!--选项-->
                 <ul class="nav navbar-nav">
-                    <li><a href="#">手动组卷</a></li>
-                    <li><a href="#">智能组卷</a></li>
+                    <li><a href="teacher_operation.jsp">个人提交试题集</a></li>
+                    <li><a href="teacher_operation.jsp">学生列表</a></li>
+                    <li><a href="teacher_operation.jsp">组卷系统</a></li>
+                    <li><a href="teacher_operation.jsp">答题进度</a></li>
                 </ul>
 
                 <!--搜索栏-->

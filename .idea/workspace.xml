@@ -8,6 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="25053e8a-be54-401e-bf5d-0e845b1f4a57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +43,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/servlet/AddExcelItemServlet.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="47" column="151" lean-forward="true" selection-start-line="47" selection-start-column="151" selection-end-line="47" selection-end-column="151" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="232">
+              <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="128" column="43" lean-forward="true" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="223" column="13" selection-start-line="223" selection-start-column="13" selection-end-line="223" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="61" column="50" lean-forward="true" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -121,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/servlet/AddStudentServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddTeacherServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/ViewExamServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/AddStudentAnswerServlet.java" />
         <option value="$PROJECT_DIR$/src/servlet/StudentLoginServlet.java" />
@@ -139,13 +174,14 @@
         <option value="$PROJECT_DIR$/web/HTML/teacher_operation.html" />
         <option value="$PROJECT_DIR$/web/js/ribbon.js" />
         <option value="$PROJECT_DIR$/web/HTML/student_paper.jsp" />
-        <option value="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/AddQuestionServlet.java" />
         <option value="$PROJECT_DIR$/.idea/artifacts/Cloud_Exam_war_exploded.xml" />
         <option value="$PROJECT_DIR$/web/HTML/student_operation.jsp" />
-        <option value="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" />
         <option value="$PROJECT_DIR$/src/servlet/AddExcelItemServlet.java" />
+        <option value="$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_operation.jsp" />
+        <option value="$PROJECT_DIR$/web/HTML/teacher_schedule.jsp" />
       </list>
     </option>
   </component>
@@ -167,6 +203,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,12 +212,26 @@
               <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cloud_Exam" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cloud_Exam" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="HTML" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,12 +254,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/File" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF/libs" />
+      <recent name="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/libs" />
       <recent name="$PROJECT_DIR$/web/js" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/HTML" />
-      <recent name="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="servlet" />
@@ -216,12 +268,12 @@
       <recent name="service" />
       <recent name="dao.impl" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/File" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF/libs" />
-      <recent name="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/WEB-INF/libs" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/js" />
-      <recent name="$PROJECT_DIR$/web/css" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/web/HTML" />
+      <recent name="$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,7 +490,9 @@
       <workItem from="1559647044806" duration="39000" />
       <workItem from="1559724775431" duration="1350000" />
       <workItem from="1559733016485" duration="17308000" />
-      <workItem from="1559800451311" duration="1328000" />
+      <workItem from="1559800451311" duration="1486000" />
+      <workItem from="1559867627671" duration="581000" />
+      <workItem from="1560062614238" duration="1373000" />
     </task>
     <task id="LOCAL-00001" summary="Update attribute and fix such error">
       <created>1556283184115</created>
@@ -559,11 +613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559752056155</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add some css and js into jsp file and add .sql to project help user build sql">
+      <created>1559802226605</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1559802226605</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242455000" />
+    <option name="totallyTimeSpent" value="244567000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,18 +637,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6366782" visible="true" weight="0.27267158" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.633218" visible="true" weight="0.28125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.3633218" side_tool="true" visible="true" weight="0.27267158" />
+      <window_info id="Web" order="7" sideWeight="0.366782" side_tool="true" visible="true" weight="0.28125" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47671568" visible="true" weight="0.33563218" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47549018" visible="true" weight="0.33563218" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497558" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,7 +657,7 @@
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4993895" weight="0.32857144" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5232843" side_tool="true" visible="true" weight="0.33563218" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5245098" side_tool="true" visible="true" weight="0.33563218" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.47120097" weight="0.3275862" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.4993895" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -631,7 +693,8 @@
     <MESSAGE value="Add checkCode function to register module" />
     <MESSAGE value="Fix answer function and change question display method" />
     <MESSAGE value="Add function that through excel file to add question" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function that through excel file to add question" />
+    <MESSAGE value="Add some css and js into jsp file and add .sql to project help user build sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add some css and js into jsp file and add .sql to project help user build sql" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/web/IMG/DSC_4180.jpg">
@@ -682,13 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="45" column="17" lean-forward="true" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -751,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="223" column="13" selection-start-line="223" selection-start-column="13" selection-end-line="223" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/HTML/student_operation.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -798,20 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="994">
-          <caret line="90" column="43" selection-start-line="90" selection-start-column="43" selection-end-line="90" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -862,29 +897,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="48" column="80" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/Cloud_Exam_war_exploded/File/excel.xsl">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2336">
-          <caret line="232" column="176" selection-start-line="232" selection-start-column="176" selection-end-line="232" selection-end-column="176" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#td#3;n#tr#3;n#table#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#10;n#table#0;n#form#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Question.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -915,9 +929,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javaproject.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4310" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlet/AddExcelItemServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -926,6 +938,48 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/RecordVoiceServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="61" column="50" lean-forward="true" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlet/TeacherLoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="223" column="13" selection-start-line="223" selection-start-column="13" selection-end-line="223" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/student_paper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="99" column="49" lean-forward="true" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_schedule.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" column="44" lean-forward="true" selection-start-line="99" selection-start-column="44" selection-end-line="99" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/HTML/teacher_operation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="128" column="43" lean-forward="true" selection-start-line="128" selection-start-column="43" selection-end-line="128" selection-end-column="43" />
         </state>
       </provider>
     </entry>
