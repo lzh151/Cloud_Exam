@@ -28,6 +28,7 @@
         }
 
         function addAnswer(exam_name,stu_id,chapter,que_id,index) {
+
             var Text = document.getElementsByName("Text")[index];
             var option = "";
             for(var i = 0; i <= 3; i++){
@@ -130,6 +131,9 @@
     <div style="font-size: 20px; float: left;" id="examLabel">试卷集</div>
     <form class="form-inline"  id="examForm" >
         <div id="examDiv">
+            <div class="alter alert-warning alert-dismissible" role="alert">
+                <strong>${result_msg}</strong>
+            </div>
             <table class="table table-hover" style="margin-top: 50px;">
                 <thead class="font_size" style="align-content: center">
                 <td>试卷名称</td>
@@ -209,7 +213,7 @@
 <footer class="container-fluid">
     <div class="container-fluid">
         <div class="row p_footer">
-            <p>Java程序设计</p>
+            <p>Web技术</p>
             <p>版权所有&nbsp;Copyright&nbsp;&nbsp;2019-2020&nbsp;All Rights Reserved</p>
         </div>
     </div>

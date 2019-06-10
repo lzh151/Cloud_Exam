@@ -542,7 +542,7 @@
 <footer class="container-fluid">
     <div class="container-fluid">
         <div class="row p_footer">
-            <p>Java程序设计</p>
+            <p>Web技术</p>
             <p>版权所有&nbsp;Copyright&nbsp;&nbsp;2019-2020&nbsp;All Rights Reserved</p>
         </div>
     </div>
@@ -581,10 +581,6 @@
             d.body.appendChild(e)}
         })();f()
     }(window,document);
-
-    window.onload = function () {
-        document.getElementById("que_describe").value = "";
-    }
 </script>
 
 <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="../js/ribbon.js"></script>

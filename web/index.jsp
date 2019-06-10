@@ -181,7 +181,7 @@
         <div class="container-fluid">
             <!--版权声明-->
             <div class="row p_footer">
-                <p>Java程序设计</p>
+                <p>Web技术</p>
                 <p>版权所有&nbsp;Copyright&nbsp;&nbsp;2019-2020&nbsp;All Rights Reserved</p>
             </div>
         </div>
